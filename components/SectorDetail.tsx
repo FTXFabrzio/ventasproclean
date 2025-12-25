@@ -78,6 +78,12 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
 
   const badgeClass =
     badgeStyles[sector.clasificacion] ?? badgeStyles.SECUNDARIO;
+  const formatTooltipValue = (value?: number | string) => {
+    if (typeof value === "number") {
+      return formatPercent(value);
+    }
+    return value ?? "";
+  };
 
   return (
     <div className="space-y-8">
@@ -166,7 +172,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
                   />
                   <Tooltip
                     cursor={{ fill: "rgba(4, 165, 204, 0.12)" }}
-                    formatter={(value: number) => formatPercent(value)}
+                    formatter={formatTooltipValue}
                     contentStyle={{
                       background: "hsl(var(--background))",
                       borderRadius: 12,
@@ -212,7 +218,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
                     ))}
                   </Pie>
                   <Tooltip
-                    formatter={(value: number) => formatPercent(value)}
+                    formatter={formatTooltipValue}
                     contentStyle={{
                       background: "hsl(var(--background))",
                       borderRadius: 12,
