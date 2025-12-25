@@ -1,0 +1,365 @@
+[
+  {
+    "slug": "salud",
+    "nombre": "Salud (Hospitales, Clinicas, Laboratorios)",
+    "score": 94,
+    "clasificacion": "CORE",
+    "kpis": {
+      "recompra": 95,
+      "regulacion": 98,
+      "sensibilidad_precio": 20,
+      "ticket": 85,
+      "barreras": 92
+    },
+    "resumen": "Segmento mas critico para bioseguridad; alta exigencia tecnica y demanda inelastica. En ingresos, representa ~32.8% del mercado de limpieza profesional.",
+    "dolores": [
+      "IAAS y presion por desinfeccion avanzada",
+      "Cumplimiento de desinfeccion de alto nivel (DAN) y gestion de residuos",
+      "Evitar contaminacion cruzada (protocolos y codificacion por colores)"
+    ],
+    "recomendaciones": [
+      "Vender como reduccion de riesgo (no como quimicos): protocolos, capacitacion y auditoria tecnica",
+      "Kits por areas criticas (UCI, quirofanos) + consumibles de alta rotacion",
+      "Ofrecer evidencia: validacion de eliminacion de patogenos y documentacion lista para auditorias"
+    ],
+    "compra_mix": {
+      "quimicos": 60,
+      "accesorios": 25,
+      "maquinas": 15
+    },
+    "compra_modelo": {
+      "reactivo": 15,
+      "preventivo": 85
+    },
+    "kits": [
+      {
+        "nombre": "Kit Bioseguridad Critica (UCI/Quirofano)",
+        "incluye": [
+          "Desinfectantes alto nivel",
+          "Microfibra codificada",
+          "Carro especializado",
+          "Checklist auditoria"
+        ],
+        "objetivo": "Reducir riesgo de IAAS y estandarizar protocolos.",
+        "cta": "Solicitar evaluacion de areas criticas"
+      },
+      {
+        "nombre": "Kit Higiene de Manos y Superficies",
+        "incluye": [
+          "Jabon quirurgico",
+          "Dispensadores",
+          "Desinfectante superficies",
+          "Guia de cumplimiento"
+        ],
+        "objetivo": "Mejorar control de higiene y trazabilidad.",
+        "cta": "Pedir demo de protocolo"
+      },
+      {
+        "nombre": "Kit Rotacion Rapida de Camas",
+        "incluye": [
+          "Desinfectante amplio espectro",
+          "Panos microfibra",
+          "Procedimiento de limpieza rapida"
+        ],
+        "objetivo": "Disminuir tiempo de rotacion sin comprometer calidad.",
+        "cta": "Agendar prueba piloto 2 semanas"
+      }
+    ],
+    "source_ids": [
+      "src_market_context",
+      "src_health_segment",
+      "src_regulatory_framework",
+      "src_segment_ranking"
+    ]
+  },
+  {
+    "slug": "food-beverage",
+    "nombre": "Food & Beverage (Cocinas Industriales y Plantas de Alimentos)",
+    "score": 90,
+    "clasificacion": "CORE",
+    "kpis": {
+      "recompra": 92,
+      "regulacion": 96,
+      "sensibilidad_precio": 35,
+      "ticket": 80,
+      "barreras": 94
+    },
+    "resumen": "Segmento regulado por HACCP/PHS y auditorias; recompra semanal y compra preventiva obligatoria. Costos en cocinas comerciales pueden llegar a ~$0.25/m2.",
+    "dolores": [
+      "Riesgo de contaminacion cruzada y clausura",
+      "Auditorias DIGESA y cumplimiento de PHS/HACCP",
+      "Necesidad de registros auditables y trazabilidad"
+    ],
+    "recomendaciones": [
+      "Posicionarse como socio tecnico para pasar auditorias (manuales + registros integrables a HACCP)",
+      "Ofrecer quimicos grado alimentario + equipos de espumado/CIP",
+      "Venta por programa: paquete mensual con documentacion + capacitacion"
+    ],
+    "compra_mix": {
+      "quimicos": 70,
+      "accesorios": 20,
+      "maquinas": 10
+    },
+    "compra_modelo": {
+      "reactivo": 10,
+      "preventivo": 90
+    },
+    "kits": [
+      {
+        "nombre": "Kit HACCP Compliance",
+        "incluye": [
+          "Desengrasante potente",
+          "Desinfectante grado alimentario",
+          "Formatos de registro",
+          "Capacitacion"
+        ],
+        "objetivo": "Asegurar cumplimiento y auditorias sin friccion.",
+        "cta": "Solicitar paquete HACCP mensual"
+      },
+      {
+        "nombre": "Kit Espumado Profesional",
+        "incluye": [
+          "Equipo de espumado",
+          "Quimico espumante",
+          "PPE recomendado",
+          "Procedimiento por zonas"
+        ],
+        "objetivo": "Estandarizar limpieza profunda por turnos.",
+        "cta": "Pedir cotizacion con instalacion"
+      },
+      {
+        "nombre": "Kit Ahorro de Agua (No Enjuague)",
+        "incluye": [
+          "Desinfectante botanico no-enjuague",
+          "Guia de uso",
+          "Checklist de validacion"
+        ],
+        "objetivo": "Reducir gasto de agua manteniendo inocuidad.",
+        "cta": "Agendar piloto 30 dias"
+      }
+    ],
+    "source_ids": [
+      "src_market_context",
+      "src_fnb_segment",
+      "src_regulatory_framework",
+      "src_segment_ranking"
+    ]
+  },
+  {
+    "slug": "industria-logistica",
+    "nombre": "Industria y Logistica (Almacenes, Plantas, CD)",
+    "score": 86,
+    "clasificacion": "CORE",
+    "kpis": {
+      "recompra": 75,
+      "regulacion": 80,
+      "sensibilidad_precio": 45,
+      "ticket": 95,
+      "barreras": 88
+    },
+    "resumen": "Demanda fuerte de maquinaria pesada y quimicos especializados. Lurin/Chilca concentran ~78% de superficie disponible en parques industriales. Compra mayoritariamente preventiva con contratos anuales.",
+    "dolores": [
+      "Limpieza no debe interrumpir flujos logisticos (ventanas nocturnas)",
+      "Homologacion (SGS/Hodelpe) y exigencia de servicio tecnico inmediato en sitio",
+      "Paradas criticas por falta de repuestos/postventa"
+    ],
+    "recomendaciones": [
+      "Ganar con Servicio Total: preventivo + correctivo + capacitacion + SLA de repuestos",
+      "Ofrecer maquinaria de alto rendimiento (barredoras/lavadoras) + quimicos concentrados (menos envase/transporte)",
+      "Paquetes por corredor: Callao (puerto), Sur (Lurin/Chilca), Norte (Ancon/Chancay)"
+    ],
+    "compra_mix": {
+      "quimicos": 40,
+      "accesorios": 15,
+      "maquinas": 45
+    },
+    "compra_modelo": {
+      "reactivo": 25,
+      "preventivo": 75
+    },
+    "kits": [
+      {
+        "nombre": "Kit Servicio Total (SLA + Repuestos)",
+        "incluye": [
+          "Plan preventivo",
+          "Correctivo",
+          "Stock minimo de repuestos",
+          "Capacitacion continua"
+        ],
+        "objetivo": "Evitar paradas operativas y asegurar continuidad.",
+        "cta": "Solicitar propuesta SLA 48h"
+      },
+      {
+        "nombre": "Kit Pisos de Alto Trafico (CD Clase A)",
+        "incluye": [
+          "Lavadora automatica",
+          "Desengrasante industrial",
+          "Absorbentes",
+          "Rutina nocturna"
+        ],
+        "objetivo": "Mantener productividad sin detener operaciones.",
+        "cta": "Agendar visita tecnica"
+      },
+      {
+        "nombre": "Kit Limpieza en Seco / Epoxicos",
+        "incluye": [
+          "Quimicos compatibles epoxico",
+          "Procedimiento en seco",
+          "Accesorios anti-rayado"
+        ],
+        "objetivo": "Limpiar sin danar recubrimientos especializados.",
+        "cta": "Pedir demostracion en sitio"
+      }
+    ],
+    "source_ids": [
+      "src_market_context",
+      "src_lima_corridors",
+      "src_industry_segment",
+      "src_benchmark",
+      "src_regulatory_framework",
+      "src_segment_ranking"
+    ]
+  },
+  {
+    "slug": "retail",
+    "nombre": "Retail (Supermercados y Centros Comerciales)",
+    "score": 74,
+    "clasificacion": "SECUNDARIO",
+    "kpis": {
+      "recompra": 85,
+      "regulacion": 55,
+      "sensibilidad_precio": 90,
+      "ticket": 70,
+      "barreras": 65
+    },
+    "resumen": "Sector dinamico con expansion y alto volumen. Costo de productos basicos ~$0.08-$0.15/m2 por visita; negociacion muy sensible al precio. Requiere logistica multi-sede.",
+    "dolores": [
+      "Seguridad (evitar caidas) y estetica de pisos en alta rotacion",
+      "Licitaciones por volumen con presion de precio",
+      "Logistica de entregas en multiples puntos"
+    ],
+    "recomendaciones": [
+      "Vender con costo total por m2 y reduccion de incidentes (antiresbalante + rutina)",
+      "Asegurar capacidad logistica multi-sede y abastecimiento semanal",
+      "Especializar en areas de alimentos frescos con quimicos compatibles"
+    ],
+    "compra_mix": {
+      "quimicos": 45,
+      "accesorios": 20,
+      "maquinas": 35
+    },
+    "compra_modelo": {
+      "reactivo": 35,
+      "preventivo": 65
+    },
+    "kits": [
+      {
+        "nombre": "Kit Piso Seguro (Anticaidas)",
+        "incluye": [
+          "Quimico no-resbalante",
+          "Senalizacion",
+          "Rutina por turnos",
+          "Checklist"
+        ],
+        "objetivo": "Reducir caidas y reclamos.",
+        "cta": "Solicitar propuesta por m2"
+      },
+      {
+        "nombre": "Kit Operacion Multi-Sede",
+        "incluye": [
+          "Plan de abastecimiento",
+          "Kits por tienda",
+          "Control de consumo",
+          "SLA entregas"
+        ],
+        "objetivo": "Garantizar continuidad sin quiebres de stock.",
+        "cta": "Pedir esquema de abastecimiento"
+      },
+      {
+        "nombre": "Kit Frescos (Retail + Inocuidad)",
+        "incluye": [
+          "Quimico grado alimentario",
+          "Procedimiento frescos",
+          "Formatos de registro"
+        ],
+        "objetivo": "Elevar estandar en zonas sensibles.",
+        "cta": "Agendar piloto en 1 tienda"
+      }
+    ],
+    "source_ids": [
+      "src_retail_segment",
+      "src_market_context",
+      "src_lima_corridors"
+    ]
+  },
+  {
+    "slug": "corporativo",
+    "nombre": "Corporativo (Oficinas, Facility Management)",
+    "score": 62,
+    "clasificacion": "NO FOCO",
+    "kpis": {
+      "recompra": 70,
+      "regulacion": 45,
+      "sensibilidad_precio": 70,
+      "ticket": 55,
+      "barreras": 60
+    },
+    "resumen": "Demanda estabilizada por trabajo hibrido; compra por contrato via outsourcing. Oportunidad si se entra por control de gasto (dosificacion) y sostenibilidad (LEED/WELL).",
+    "dolores": [
+      "Presion por hacer mas con menos (control presupuesto)",
+      "Necesidad de integrarse a facility management",
+      "Preferencia por sostenibilidad (LEED/WELL)"
+    ],
+    "recomendaciones": [
+      "Entrar con dosificacion y control de consumo (presupuesto predecible)",
+      "Propuesta de consumibles biodegradables + maquinaria compacta silenciosa",
+      "Alianzas con proveedores de facility management"
+    ],
+    "compra_mix": {
+      "quimicos": 40,
+      "accesorios": 40,
+      "maquinas": 20
+    },
+    "compra_modelo": {
+      "reactivo": 20,
+      "preventivo": 80
+    },
+    "kits": [
+      {
+        "nombre": "Kit Control de Consumo (Dosificacion)",
+        "incluye": [
+          "Sistema dosificacion",
+          "Capacitacion",
+          "Guia de control",
+          "Reporte mensual"
+        ],
+        "objetivo": "Reducir sobreuso y estabilizar gasto.",
+        "cta": "Solicitar diagnostico de consumo"
+      },
+      {
+        "nombre": "Kit Limpieza Verde (LEED/WELL)",
+        "incluye": [
+          "Quimicos eco",
+          "Consumibles biodegradables",
+          "Politica ambiental basica"
+        ],
+        "objetivo": "Alinear limpieza con estandares sostenibles.",
+        "cta": "Pedir propuesta green"
+      },
+      {
+        "nombre": "Kit Maquinaria Silenciosa (Horario Diurno)",
+        "incluye": [
+          "Aspiradora silenciosa",
+          "Accesorios",
+          "Rutina por areas comunes"
+        ],
+        "objetivo": "Mantener imagen sin interrumpir operacion.",
+        "cta": "Agendar demo en oficina"
+      }
+    ],
+    "source_ids": [
+      "src_corporate_segment",
+      "src_market_context"
+    ]
+  }
+]

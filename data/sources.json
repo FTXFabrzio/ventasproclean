@@ -1,0 +1,82 @@
+[
+  {
+    "id": "src_market_context",
+    "titulo": "Contexto Macroeconomico y Mercado (valor 2025 y CAGR)",
+    "fecha": "2025-01-01",
+    "url": "https://inei.gob.pe/",
+    "extracto": "El mercado de limpieza en Peru alcanza ~US$1.29B (2025) y proyecta CAGR 7.1%. La higiene se percibe como activo critico para continuidad y reputacion.",
+    "tags": ["general", "mercado"]
+  },
+  {
+    "id": "src_lima_corridors",
+    "titulo": "Corredores de Demanda en Lima (Centro/Sur/Norte/Callao)",
+    "fecha": "2025-01-01",
+    "url": "https://www.gob.pe/",
+    "extracto": "Lima Centro: eje administrativo/hospitalario. Lima Sur: industria y retail. Callao: especializacion portuaria. Lurin/Chilca concentra ~78% de superficie disponible en parques industriales.",
+    "tags": ["general", "geografia"]
+  },
+  {
+    "id": "src_industry_segment",
+    "titulo": "Industria y Logistica: compra preventiva, maquinaria y barreras",
+    "fecha": "2025-01-01",
+    "url": "https://www.gob.pe/minsa",
+    "extracto": "Compra mayoritariamente preventiva con contratos anuales. Barreras: homologacion (SGS/Hodelpe) y servicio tecnico inmediato en sitio. Tendencia a automatizacion e IoT.",
+    "tags": ["industria-logistica", "segmento"]
+  },
+  {
+    "id": "src_health_segment",
+    "titulo": "Salud: alta exigencia tecnica y 32.8% del ingreso del mercado",
+    "fecha": "2025-01-01",
+    "url": "https://www.gob.pe/digesa",
+    "extracto": "Segmento sanitario critico: protocolos DIGESA, DAN, residuos; recompra semanal/quincenal. Representa ~32.8% del mercado de limpieza profesional en ingresos.",
+    "tags": ["salud", "segmento"]
+  },
+  {
+    "id": "src_retail_segment",
+    "titulo": "Retail: alta sensibilidad al precio y costo por visita ($0.08-$0.15/m2)",
+    "fecha": "2025-01-01",
+    "url": "https://www.asi.com.pe/",
+    "extracto": "Retail dinamico; costos por m2 por visita y presion por precio. Requiere logistica multi-sede y seguridad (evitar caidas).",
+    "tags": ["retail", "segmento"]
+  },
+  {
+    "id": "src_fnb_segment",
+    "titulo": "Food & Beverage: HACCP/PHS obligatorio y costos hasta ~$0.25/m2",
+    "fecha": "2025-01-01",
+    "url": "https://www.gob.pe/digesa",
+    "extracto": "F&B regulado: HACCP, PHS, auditorias. Compra preventiva obligatoria con registros auditables. Costos pueden llegar a $0.25/m2 en cocinas comerciales.",
+    "tags": ["food-beverage", "segmento"]
+  },
+  {
+    "id": "src_corporate_segment",
+    "titulo": "Corporativo: contratos via outsourcing, sostenibilidad (LEED/WELL) y dosificacion",
+    "fecha": "2025-01-01",
+    "url": "https://www.usgbc.org/leed",
+    "extracto": "Demanda estabilizada por trabajo hibrido. Oportunidad: dosificacion para controlar gasto y productos con certificaciones ambientales.",
+    "tags": ["corporativo", "segmento"]
+  },
+  {
+    "id": "src_benchmark",
+    "titulo": "Benchmark Lima: multinacionales vs locales (brechas y oportunidad Servicio Total)",
+    "fecha": "2025-01-01",
+    "url": "https://www.ecolab.com/",
+    "extracto": "Multinacionales: precio premium y postventa enfocada en AAA. Locales: soporte tecnico limitado; venden maquina sin garantizar repuestos/reparacion <48h. Oportunidad: Servicio Total (SLA + capacitacion).",
+    "tags": ["general", "benchmark"]
+  },
+  {
+    "id": "src_regulatory_framework",
+    "titulo": "Marco regulatorio como herramienta comercial (DIGESA/DS 031-2023-SA, SST, Homologacion, HACCP)",
+    "fecha": "2025-01-01",
+    "url": "https://www.gob.pe/minsa",
+    "extracto": "Cumplimiento normativo como argumento de venta: DS 031-2023-SA, Ley 29783, homologacion (SGS/Hodelpe) y validacion tecnica para Salud/F&B.",
+    "tags": ["general", "regulacion"]
+  },
+  {
+    "id": "src_segment_ranking",
+    "titulo": "Ranking de Segmentos Estrategicos Lima 2026 (Salud #1, F&B #2, Industria #3)",
+    "fecha": "2025-01-01",
+    "url": "https://www.inei.gob.pe/",
+    "extracto": "Ranking por atractivo comercial: Salud primero (margenes altos, demanda inelastica), luego Food & Beverage (recompra semanal y barreras tecnicas), luego Industria y Logistica (volumen y CAPEX).",
+    "tags": ["general", "estrategia"]
+  }
+]

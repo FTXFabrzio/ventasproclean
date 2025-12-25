@@ -1,0 +1,17 @@
+:root {
+  --background: 0 0% 100%;
+  --foreground: 217 49% 8%;
+  --muted: 240 12% 97%;
+  --border: 218 17% 91%;
+  --primary: 192 96% 41%;
+  --primary-foreground: 0 0% 100%;
+}
+
+.dark {
+  --background: 213 29% 6%;
+  --foreground: 212 39% 94%;
+  --muted: 214 26% 11%;
+  --border: 217 21% 16%;
+  --primary: 192 96% 41%;
+  --primary-foreground: 194 87% 6%;
+}

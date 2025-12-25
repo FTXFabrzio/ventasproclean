@@ -1,0 +1,20 @@
+@config "../tailwind.config.mjs";
+@import "tailwindcss";
+@import "../styles/theme.css";
+
+@theme {
+  --font-sans: var(--font-inter);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+}
+
+* {
+  @apply border-border;
+}

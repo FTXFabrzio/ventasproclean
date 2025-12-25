@@ -1,0 +1,36 @@
+[
+  {
+    "nombre": "Diversey / Ecolab",
+    "foco": "Sistemas integrales + contratos de valor; priorizan Salud, F&B, Hoteleria",
+    "propuesta": "Ecosistemas de seguridad, dilucion precisa, programas consolidados",
+    "debilidades": [
+      "Precios premium",
+      "Burocracia corporativa ralentiza decisiones",
+      "Postventa enfocada solo en cuentas AAA"
+    ],
+    "notas": "Oportunidad: ganar con cercania, flexibilidad y servicio total local.",
+    "source_ids": ["src_benchmark"]
+  },
+  {
+    "nombre": "Klaxen / Sapolio Institucional",
+    "foco": "Catalogo + distribuidores; fuerte en Industria y Sector Publico",
+    "propuesta": "Marca local reconocida, precios competitivos, agilidad de entrega (quimicos basicos)",
+    "debilidades": [
+      "Menor especializacion en maquinaria compleja",
+      "Soporte tecnico limitado para equipos de alta gama"
+    ],
+    "notas": "Oportunidad: ProClean como especialista en maquinaria + postventa/SLA.",
+    "source_ids": ["src_benchmark"]
+  },
+  {
+    "nombre": "Empresas de Servicios (Sodexo / Eulen / SILSA)",
+    "foco": "Outsourcing; controlan compra de insumos por contrato",
+    "propuesta": "Relacion directa con cliente final y dominio de operacion diaria",
+    "debilidades": [
+      "Priorizan ahorro en insumos para maximizar margen",
+      "Puede degradar calidad de higiene"
+    ],
+    "notas": "Estrategia: entrar como proveedor validado y mostrar ROI + compliance.",
+    "source_ids": ["src_benchmark"]
+  }
+]
