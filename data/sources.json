@@ -1,82 +1,82 @@
 [
   {
-    "id": "src_market_context",
-    "titulo": "Investigacion Mercado Limpieza Lima 2025-2026 - Contexto y mercado",
+    "id": "src_doc_general",
+    "titulo": "Documento interno - Investigacion de mercado Lima 2025-2026 (resumen)",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-limpieza-2026",
-    "extracto": "Panorama del mercado de limpieza profesional en Lima, dinamica de demanda y presion competitiva.",
+    "url": "",
+    "extracto": "Resumen general del mercado, ranking de sectores y patrones de compra en Lima.",
     "tags": ["general", "mercado"]
   },
   {
-    "id": "src_lima_corridors",
-    "titulo": "Investigacion Mercado Limpieza Lima 2025-2026 - Corredores de demanda",
+    "id": "src_doc_corredores",
+    "titulo": "Documento interno - Corredores de demanda en Lima",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-lima-corredores",
-    "extracto": "Mapa de corredores con mayor concentracion de actividad (Centro, Sur, Norte y Callao).",
-    "tags": ["general", "geografia"]
+    "url": "",
+    "extracto": "Zonas con mayor concentracion de actividad: Centro, Sur, Norte y Callao.",
+    "tags": ["general", "corredores"]
   },
   {
-    "id": "src_industry_segment",
-    "titulo": "Investigacion Mercado Limpieza - Industria y Logistica",
+    "id": "src_doc_regulacion",
+    "titulo": "Documento interno - Normas y auditorias por sector",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-industria-logistica",
-    "extracto": "Segmento con alta demanda de maquinaria, limpieza nocturna y contratos preventivos.",
-    "tags": ["industria-logistica", "impulsores"]
+    "url": "",
+    "extracto": "DIGESA, HACCP y protocolos internos como base de compra en salud y alimentos.",
+    "tags": ["general", "normas"]
   },
   {
-    "id": "src_health_segment",
-    "titulo": "Investigacion Mercado Limpieza - Salud",
+    "id": "src_doc_salud",
+    "titulo": "Documento interno - Sector Salud",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-salud",
-    "extracto": "Sector mas exigente, con recompra frecuente y protocolos estrictos de bioseguridad.",
-    "tags": ["salud", "impulsores"]
+    "url": "",
+    "extracto": "Mostrar cumplimiento, reducir riesgos y mantener bioseguridad con recompra frecuente.",
+    "tags": ["salud", "perfil"]
   },
   {
-    "id": "src_retail_segment",
-    "titulo": "Investigacion Mercado Limpieza - Retail",
+    "id": "src_doc_alimentos",
+    "titulo": "Documento interno - Sector Alimentos y Bebidas",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-retail",
-    "extracto": "Alta exposicion publica y presion por costo por m2, con foco en pisos y seguridad.",
-    "tags": ["retail", "impulsores"]
+    "url": "",
+    "extracto": "Compras obligadas por norma, foco en grasa, desinfeccion y auditorias constantes.",
+    "tags": ["alimentos-bebidas", "perfil"]
   },
   {
-    "id": "src_fnb_segment",
-    "titulo": "Investigacion Mercado Limpieza - Alimentos y Bebidas",
+    "id": "src_doc_industria",
+    "titulo": "Documento interno - Sector Industria y Logistica",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-alimentos-bebidas",
-    "extracto": "Cumplimiento HACCP/PHS, auditorias y recompra semanal por turnos.",
-    "tags": ["alimentos-bebidas", "impulsores"]
+    "url": "",
+    "extracto": "Continuidad operativa, maquinaria y quimicos concentrados con recompra mensual.",
+    "tags": ["industria-logistica", "perfil"]
   },
   {
-    "id": "src_corporate_segment",
-    "titulo": "Investigacion Mercado Limpieza - Corporativo",
+    "id": "src_doc_retail",
+    "titulo": "Documento interno - Sector Retail",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-corporativo",
-    "extracto": "Mercado maduro, sensible al precio y con foco en imagen y sostenibilidad.",
-    "tags": ["corporativo", "impulsores"]
+    "url": "",
+    "extracto": "Alta visibilidad, presion por precio y foco en seguridad de pisos y banos.",
+    "tags": ["retail", "perfil"]
   },
   {
-    "id": "src_benchmark",
-    "titulo": "Investigacion Mercado Limpieza - Comparativa competitiva",
+    "id": "src_doc_corporativo",
+    "titulo": "Documento interno - Sector Corporativo",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-comparativa",
-    "extracto": "Brechas entre multinacionales y locales, y oportunidad de servicio total.",
-    "tags": ["general", "comparativa"]
+    "url": "",
+    "extracto": "Mercado sensible al precio, compra por imagen, orden y control de consumo.",
+    "tags": ["corporativo", "perfil"]
   },
   {
-    "id": "src_regulatory_framework",
-    "titulo": "Investigacion Mercado Limpieza - Marco regulatorio",
+    "id": "src_doc_competencia",
+    "titulo": "Documento interno - Comparativa de competencia",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-regulacion",
-    "extracto": "DIGESA, HACCP y exigencias sanitarias como impulsores de compra.",
-    "tags": ["general", "regulacion"]
+    "url": "",
+    "extracto": "Mapa de competidores locales y multinacionales, con brechas de servicio y soporte.",
+    "tags": ["general", "competencia"]
   },
   {
-    "id": "src_segment_ranking",
-    "titulo": "Investigacion Mercado Limpieza - Orden de segmentos",
+    "id": "src_doc_plan",
+    "titulo": "Documento interno - Lineas del plan comercial 2026",
     "fecha": "2025-01-01",
-    "url": "https://proclean.local/investigacion-mercado-ranking",
-    "extracto": "Orden de atractivo comercial: Salud y Alimentos y Bebidas como prioritarios, Industria y Retail como secundarios.",
-    "tags": ["general", "estrategia"]
+    "url": "",
+    "extracto": "Prioridades 2026: sectores CORE, kits por proceso y cobertura territorial.",
+    "tags": ["general", "plan-2026"]
   }
 ]

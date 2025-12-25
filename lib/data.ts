@@ -8,7 +8,7 @@ import competitors from "@/data/competitors.json";
 export type KPI = {
   recompra: number;
   regulacion: number;
-  sensibilidad_precio: number;
+  precio: number;
   ticket: number;
   barreras: number;
 };
@@ -20,9 +20,12 @@ export type Sector = {
   clasificacion: string;
   kpis: KPI;
   resumen: string;
+  dirigido_a: string[];
+  motivos_compra: string[];
   dolores: string[];
   que_compra: string[];
   recomendaciones: string[];
+  actores: string[];
   pitch: string;
   compra_mix: {
     quimicos: number;

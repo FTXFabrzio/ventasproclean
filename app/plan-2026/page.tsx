@@ -6,69 +6,69 @@ import Tabs from "@/components/Tabs";
 
 const roadmapItems = [
   {
-    title: "Q1 - Preparacion comercial",
+    title: "Q1 - Arranque comercial",
     period: "Ene-Mar",
     detail:
-      "Definir segmentos prioritarios, actualizar argumentarios y cerrar primeras cuentas prioritarias.",
+      "Definir sectores CORE, preparar kits y cerrar las primeras cuentas.",
   },
   {
-    title: "Q2 - Expansiones focalizadas",
+    title: "Q2 - Crecer con foco",
     period: "Abr-Jun",
     detail:
-      "Escalar kits y contratos preventivos en salud y alimentos y bebidas.",
+      "Escalar kits y planes de reposicion en salud y alimentos y bebidas.",
   },
   {
-    title: "Q3 - Consolidacion territorial",
+    title: "Q3 - Presencia territorial",
     period: "Jul-Sep",
     detail:
-      "Aumentar cobertura en corredores Sur, Centro y Callao con equipos dedicados.",
+      "Aumentar cobertura en Sur, Centro y Callao con equipos dedicados.",
   },
   {
-    title: "Q4 - Retencion y venta adicional",
+    title: "Q4 - Retener y crecer",
     period: "Oct-Dic",
     detail:
-      "Renovar contratos y lanzar paquetes por proceso para 2027.",
+      "Renovar contratos y preparar paquetes para 2027.",
   },
 ];
 
 const funnelStages = [
-  { stage: "Prospeccion", detail: "Base de cuentas prioritarias y prospectos referidos." },
-  { stage: "Diagnostico", detail: "Auditoria rapida y propuesta de kits." },
-  { stage: "Piloto", detail: "Prueba de 30 dias con indicadores claros." },
-  { stage: "Contrato", detail: "Cierre con plan preventivo y acuerdo de nivel de servicio." },
-  { stage: "Expansion", detail: "Venta adicional por area y reposicion automatica." },
+  { stage: "Busqueda de clientes", detail: "Lista de cuentas y contactos clave." },
+  { stage: "Visita y diagnostico", detail: "Revisar area critica y proponer kit." },
+  { stage: "Prueba corta", detail: "Piloto de 30 dias con resultados simples." },
+  { stage: "Acuerdo", detail: "Plan de reposicion y visitas programadas." },
+  { stage: "Crecimiento", detail: "Venta adicional por area y nuevas sedes." },
 ];
 
 const channels = [
   { name: "WhatsApp comercial", priority: "Alta", note: "Seguimiento semanal." },
   { name: "Visitas tecnicas", priority: "Alta", note: "Agenda por corredor." },
   { name: "Alianzas", priority: "Media", note: "Cooperacion comercial con proveedores." },
-  { name: "Nutricion por correo", priority: "Media", note: "Secuencia educativa." },
+  { name: "Correos de seguimiento", priority: "Media", note: "Mensajes simples por sector." },
   { name: "Eventos sectoriales", priority: "Baja", note: "Foco Q3." },
 ];
 
 const tabs = [
   {
     id: "funnel",
-    label: "Embudo",
+    label: "Pasos de venta",
     content:
-      "El embudo prioriza pilotos rapidos y contratos preventivos para maximizar recompra.",
+      "Los pasos priorizan pruebas rapidas y planes de reposicion.",
   },
   {
     id: "canales",
     label: "Canales",
     content:
-      "WhatsApp y visitas tecnicas son los canales con mayor traccion en 2026.",
+      "WhatsApp y visitas tecnicas son los canales mas efectivos en 2026.",
   },
 ];
 
 export default function Plan2026Page() {
   const [tasks, setTasks] = useState([
-    { id: "t1", label: "Actualizar argumentario por sector prioritario", done: false },
-    { id: "t2", label: "Definir kits comerciales base", done: false },
-    { id: "t3", label: "Mapear decisores por corredor", done: false },
-    { id: "t4", label: "Lanzar piloto con 3 cuentas salud", done: false },
-    { id: "t5", label: "Configurar el sistema comercial con fases del embudo", done: false },
+    { id: "t1", label: "Actualizar mensaje de venta por sector CORE", done: false },
+    { id: "t2", label: "Definir kits base para salud y alimentos", done: false },
+    { id: "t3", label: "Listar decisores por corredor", done: false },
+    { id: "t4", label: "Lanzar 3 pruebas piloto en salud", done: false },
+    { id: "t5", label: "Dejar listo el camino de venta en el registro comercial", done: false },
   ]);
 
   const toggleTask = (id: string) => {
@@ -86,10 +86,10 @@ export default function Plan2026Page() {
           Plan 2026
         </p>
         <h1 className="mt-2 text-3xl font-semibold text-foreground">
-          Hoja de ruta comercial 2026
+          Plan comercial 2026 en pasos simples
         </h1>
         <p className="mt-2 text-sm text-foreground/70">
-          Hoja de ruta por trimestre, embudo y canales.
+          Que hacer, cuando hacerlo y por que funciona.
         </p>
       </header>
 
@@ -103,7 +103,7 @@ export default function Plan2026Page() {
       <section className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
         <div className="rounded-2xl border bg-muted p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-foreground">
-            Embudo comercial
+            Camino de la venta
           </h2>
           <div className="mt-4 space-y-3">
             {funnelStages.map((stage, index) => (
@@ -156,7 +156,7 @@ export default function Plan2026Page() {
           Proximos 30 dias
         </h2>
         <p className="mt-2 text-sm text-foreground/70">
-          Lista de control operativa con seguimiento local.
+          Lista simple con seguimiento local.
         </p>
         <div className="mt-4 space-y-3">
           {tasks.map((task) => (

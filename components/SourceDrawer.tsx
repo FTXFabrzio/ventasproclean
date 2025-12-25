@@ -70,7 +70,7 @@ export default function SourceDrawer({
               {title}
             </p>
             <h3 className="text-lg font-semibold text-foreground">
-              Documentos y referencias
+              Fuentes y notas
             </h3>
           </div>
           <button
@@ -87,7 +87,7 @@ export default function SourceDrawer({
             children
           ) : sources.length === 0 ? (
             <div className="rounded-xl border bg-muted/60 p-4 text-sm text-foreground/60">
-              No hay fuentes asociadas.
+              No hay fuentes para mostrar.
             </div>
           ) : (
             sources.map((source) => (

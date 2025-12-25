@@ -27,6 +27,7 @@ type SectorDetailProps = {
 };
 
 const badgeStyles: Record<string, string> = {
+  CORE: "bg-primary text-primary-foreground",
   PRIORITARIO: "bg-primary text-primary-foreground",
   SECUNDARIO: "bg-muted text-foreground",
   "NO FOCO": "bg-background text-foreground/60 border",
@@ -80,7 +81,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
     badgeStyles[sector.clasificacion] ?? badgeStyles.SECUNDARIO;
   const formatTooltipValue = (value?: number | string) => {
     if (typeof value === "number") {
-      return formatPercent(value);
+      return [formatPercent(value), "Porcentaje"];
     }
     return value ?? "";
   };
@@ -91,7 +92,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-xs uppercase tracking-wide text-foreground/60">
-              Sector
+              Resumen del sector
             </p>
             <h1 className="text-2xl font-semibold text-foreground">
               {sector.nombre}
@@ -118,15 +119,19 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
           </button>
         </div>
         <div className="mt-6 grid gap-3 md:grid-cols-5">
-          <KPIChip label="Recompra" value={sector.kpis.recompra} helper="/100" />
-          <KPIChip label="Regulacion" value={sector.kpis.regulacion} helper="/100" />
+          <KPIChip label="Frecuencia de compra" value={sector.kpis.recompra} helper="/100" />
+          <KPIChip label="Exigencia de normas" value={sector.kpis.regulacion} helper="/100" />
           <KPIChip
-            label="Sensibilidad precio"
-            value={sector.kpis.sensibilidad_precio}
+            label="Que tanto pelean el precio"
+            value={sector.kpis.precio}
             helper="/100"
           />
-          <KPIChip label="Ticket" value={sector.kpis.ticket} helper="/100" />
-          <KPIChip label="Barreras" value={sector.kpis.barreras} helper="/100" />
+          <KPIChip label="Ticket promedio" value={sector.kpis.ticket} helper="/100" />
+          <KPIChip
+            label="Que te exige el cliente para comprarte"
+            value={sector.kpis.barreras}
+            helper="/100"
+          />
         </div>
       </header>
 
@@ -134,7 +139,29 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
         <div className="space-y-8">
           <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-foreground">
-              Dolores e impulsores 2025-2026
+              A quien va dirigido
+            </h2>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-foreground/70">
+              {sector.dirigido_a.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
+            <h2 className="text-lg font-semibold text-foreground">
+              Por que compran limpieza industrial
+            </h2>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-foreground/70">
+              {sector.motivos_compra.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
+            <h2 className="text-lg font-semibold text-foreground">
+              Problemas del dia a dia
             </h2>
             <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-foreground/70">
               {sector.dolores.map((dolor) => (
@@ -144,12 +171,23 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
           </section>
 
           <section className="rounded-2xl border bg-muted p-6 shadow-sm">
+            <h2 className="text-lg font-semibold text-foreground">
+              Actores del sector (referencial, no significa que sean clientes)
+            </h2>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-foreground/70">
+              {sector.actores.map((actor) => (
+                <li key={actor}>{actor}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <h2 className="text-lg font-semibold text-foreground">
-                Que compran (en simple)
+                Que compran y con que frecuencia
               </h2>
               <p className="text-xs text-foreground/60">
-                Mix estimado por tipo de producto
+                Resumen de quimicos, accesorios y maquinas
               </p>
             </div>
             <div className="mt-6 h-56">
@@ -194,10 +232,10 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
           <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <h2 className="text-lg font-semibold text-foreground">
-                Modelo de compra
+                Como compran hoy
               </h2>
               <p className="text-xs text-foreground/60">
-                Reactivo vs preventivo
+                Por urgencia vs planificado
               </p>
             </div>
             <div className="mt-6 h-56">
@@ -244,7 +282,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
           <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
               <h2 className="text-lg font-semibold text-foreground">
-                Como se gana la venta
+                Como ganar la venta
               </h2>
               <button
                 type="button"
@@ -264,7 +302,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
 
           <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-foreground">
-              Kits comerciales
+              Kits para vender facil
             </h2>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               {sector.kits.map((kit) => (
@@ -299,7 +337,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
 
           <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-foreground">
-              Mensaje de 30 segundos
+              Mensaje comercial corto
             </h2>
             <p className="mt-3 text-sm text-foreground/70">{sector.pitch}</p>
           </section>

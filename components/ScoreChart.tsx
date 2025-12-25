@@ -9,6 +9,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { formatScore } from "@/lib/format";
 
 type ScoreDatum = {
   name: string;
@@ -20,6 +21,13 @@ type ScoreChartProps = {
 };
 
 export default function ScoreChart({ data }: ScoreChartProps) {
+  const formatTooltipValue = (value?: number | string) => {
+    if (typeof value === "number") {
+      return [formatScore(value), "Puntaje"];
+    }
+    return value ?? "";
+  };
+
   return (
     <div className="h-64 w-full">
       <ResponsiveContainer width="100%" height="100%">
@@ -39,6 +47,7 @@ export default function ScoreChart({ data }: ScoreChartProps) {
           />
           <Tooltip
             cursor={{ fill: "rgba(4, 165, 204, 0.12)" }}
+            formatter={formatTooltipValue}
             contentStyle={{
               background: "hsl(var(--background))",
               borderRadius: 12,

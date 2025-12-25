@@ -55,6 +55,9 @@ export default function LayoutShell({ children }: LayoutShellProps) {
           <h1 className="text-sm font-semibold leading-snug text-foreground sm:text-base">
             Plan de Ventas 2026
           </h1>
+          <p className="mt-1 text-[10px] text-foreground/60">
+            Presentado por Henrry Abner Diaz Cueva
+          </p>
         </div>
         <div className="flex shrink-0 items-center gap-2">
           <button
@@ -95,6 +98,9 @@ export default function LayoutShell({ children }: LayoutShellProps) {
                 <h2 className="text-lg font-semibold text-foreground">
                   Plan de Ventas 2026
                 </h2>
+                <p className="mt-1 text-xs text-foreground/60">
+                  Presentado por Henrry Abner Diaz Cueva
+                </p>
               </div>
               <button
                 type="button"
@@ -123,6 +129,9 @@ export default function LayoutShell({ children }: LayoutShellProps) {
             <h1 className="text-lg font-semibold text-foreground">
               Plan de Ventas 2026
             </h1>
+            <p className="mt-1 text-xs text-foreground/60">
+              Presentado por Henrry Abner Diaz Cueva
+            </p>
           </div>
           <nav className="mt-8 flex flex-col gap-2">
             {navItems.map((item) => (
@@ -145,6 +154,9 @@ export default function LayoutShell({ children }: LayoutShellProps) {
         <main className="flex-1">
           <div className="mx-auto w-full max-w-6xl px-4 py-8 md:px-8">
             {children}
+            <footer className="mt-10 border-t pt-4 text-xs text-foreground/60">
+              Presentado por Henrry Abner Diaz Cueva
+            </footer>
           </div>
         </main>
       </div>

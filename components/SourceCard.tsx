@@ -52,14 +52,20 @@ export default function SourceCard({
           </span>
         ))}
       </div>
-      <a
-        href={source.url}
-        target="_blank"
-        rel="noreferrer"
-        className="mt-3 inline-flex text-xs font-medium text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
-      >
-        {source.url}
-      </a>
+      {source.url ? (
+        <a
+          href={source.url}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-3 inline-flex text-xs font-medium text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
+        >
+          {source.url}
+        </a>
+      ) : (
+        <span className="mt-3 inline-flex text-xs font-medium text-foreground/60">
+          Documento interno
+        </span>
+      )}
     </div>
   );
 }

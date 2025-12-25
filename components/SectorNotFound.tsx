@@ -7,16 +7,17 @@ export default function SectorNotFound() {
         Sectores
       </p>
       <h1 className="mt-2 text-2xl font-semibold text-foreground">
-        Sector no encontrado
+        En construccion
       </h1>
       <p className="mt-2 text-sm text-foreground/70">
-        Este sector aun no tiene contenido cargado o el enlace esta mal.
+        Este sector aun no tiene contenido cargado. Puedes completar los datos
+        para terminarlo.
       </p>
       <Link
-        href="/"
+        href="/fuentes"
         className="mt-6 inline-flex rounded-full border px-4 py-2 text-xs text-foreground/70 transition hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
       >
-        Volver al Resumen Ejecutivo
+        Completar datos
       </Link>
     </div>
   );

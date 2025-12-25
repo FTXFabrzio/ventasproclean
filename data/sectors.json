@@ -2,30 +2,42 @@
   {
     "slug": "salud",
     "nombre": "Salud (Hospitales, Clinicas, Laboratorios)",
-    "score": 94,
-    "clasificacion": "PRIORITARIO",
+    "score": 92,
+    "clasificacion": "CORE",
     "kpis": {
       "recompra": 95,
       "regulacion": 98,
-      "sensibilidad_precio": 20,
+      "precio": 20,
       "ticket": 85,
-      "barreras": 92
+      "barreras": 90
     },
-    "resumen": "En salud no se compra por precio, se compra por seguridad. El cliente quiere reducir riesgos, evitar contagios y pasar auditorias internas. Si ProClean se posiciona como socio de bioseguridad, este sector deja compras repetidas y contratos estables.",
+    "resumen": "En salud se compra por seguridad y cumplimiento, no por precio. Buscan bajar riesgos, evitar contagios y pasar auditorias internas. Si ProClean se posiciona como socio de bioseguridad, este sector deja compras repetidas y contratos estables.",
+    "dirigido_a": [
+      "Hospitales y clinicas",
+      "Laboratorios y centros de diagnostico",
+      "Centros de salud privados con alto flujo"
+    ],
+    "motivos_compra": [
+      "Reducir infecciones y reclamos",
+      "Cumplir protocolos y auditorias",
+      "Evitar paradas en areas criticas"
+    ],
     "dolores": [
       "Necesitan limpieza consistente y sin fallas, todos los dias.",
-      "Temen incidentes: infecciones, reclamos, inspecciones.",
-      "Buscan proveedores que no solo vendan, sino que ensenan el uso correcto."
+      "Temen incidentes: infecciones, reclamos e inspecciones.",
+      "Buscan proveedores que no solo vendan, sino que ensenen el uso correcto.",
+      "Cualquier error puede afectar reputacion y presupuesto."
     ],
     "que_compra": [
-      "Desinfectantes y productos de alto rendimiento.",
-      "Consumibles de rotacion rapida (panos, mopas, guantes, etc.).",
-      "Equipos compactos y faciles de usar (segun area)."
+      "Desinfectantes de alto nivel (recompra semanal o quincenal).",
+      "Consumibles de rotacion rapida: panos, mopas, guantes (semanal).",
+      "Equipos compactos por area (trimestral o por proyecto)."
     ],
     "recomendaciones": [
       "Hablar de reduccion de riesgo y cumplimiento, no de litros.",
       "Ofrecer plan mensual con reposicion y capacitacion breve.",
-      "Proponer una prueba piloto en un area critica."
+      "Proponer prueba piloto en un area critica con lista de control.",
+      "Asegurar registro simple de uso y control."
     ],
     "compra_mix": {
       "quimicos": 60,
@@ -33,8 +45,8 @@
       "maquinas": 15
     },
     "compra_modelo": {
-      "reactivo": 15,
-      "preventivo": 85
+      "reactivo": 20,
+      "preventivo": 80
     },
     "kits": [
       {
@@ -70,41 +82,58 @@
         "cta": "Solicitar kit"
       }
     ],
-    "pitch": "En salud no vendemos productos: vendemos tranquilidad. Les dejamos un protocolo simple, capacitacion breve y reposicion programada para que la limpieza sea consistente y auditable.",
+    "actores": [
+      "Auna",
+      "Clinica San Pablo",
+      "Clinica Delgado",
+      "Laboratorio Roe"
+    ],
+    "pitch": "En salud no vendemos productos: vendemos tranquilidad. Dejamos un protocolo simple, capacitacion breve y reposicion programada para que la limpieza sea consistente y auditable.",
     "source_ids": [
-      "src_health_segment",
-      "src_regulatory_framework",
-      "src_segment_ranking"
+      "src_doc_salud",
+      "src_doc_regulacion"
     ]
   },
   {
     "slug": "alimentos-bebidas",
     "nombre": "Alimentos y Bebidas (Cocinas Industriales y Plantas de Alimentos)",
     "score": 90,
-    "clasificacion": "PRIORITARIO",
+    "clasificacion": "CORE",
     "kpis": {
       "recompra": 92,
       "regulacion": 96,
-      "sensibilidad_precio": 35,
+      "precio": 35,
       "ticket": 80,
-      "barreras": 94
+      "barreras": 88
     },
-    "resumen": "Este sector compra porque esta obligado: si fallan, se arriesgan a sanciones y perdida de confianza. Lo que mas valoran es limpieza profunda, control de grasa, desinfeccion segura y registros.",
+    "resumen": "Compran porque estan obligados: si fallan, se arriesgan a sanciones y perdida de confianza. Lo que mas valoran es limpieza profunda, control de grasa, desinfeccion segura y registros. La recompra suele ser semanal.",
+    "dirigido_a": [
+      "Cocinas industriales",
+      "Plantas de alimentos",
+      "Centros de produccion y catering"
+    ],
+    "motivos_compra": [
+      "Cumplir HACCP, PHS y DIGESA",
+      "Evitar clausuras y quejas por inocuidad",
+      "Mantener rutinas por turnos sin improvisar"
+    ],
     "dolores": [
-      "Evitar contaminacion cruzada (algo que pueda cerrarles el negocio).",
+      "Evitar contaminacion cruzada.",
       "Limpieza de grasa y residuos dificiles.",
-      "Necesitan orden y rutina por turnos."
+      "Necesitan orden y rutina por turnos.",
+      "Auditorias frecuentes y estrictas."
     ],
     "que_compra": [
-      "Desengrasantes fuertes y productos para limpieza profunda.",
-      "Desinfectantes adecuados para zonas de alimentos.",
-      "Accesorios por color/zona (para evitar mezclas).",
-      "En algunos casos: equipos de espumado o limpieza programada."
+      "Desengrasantes fuertes (recompra semanal).",
+      "Desinfectantes grado alimentario (recompra semanal).",
+      "Accesorios por color/zona (mensual).",
+      "Equipos de espumado o limpieza programada (trimestral)."
     ],
     "recomendaciones": [
-      "Vender programa mensual, no compras sueltas.",
-      "Enfatizar ahorro por consistencia: menos retrabajo, menos quejas, menos riesgo.",
-      "Ofrecer un plan por areas (cocina, camara, zona de lavado, pisos, banos)."
+      "Vender programa mensual con registro simple.",
+      "Enfatizar ahorro por consistencia: menos retrabajo y menos riesgo.",
+      "Ofrecer plan por areas (cocina, camara, lavado, pisos, banos).",
+      "Acompanamiento para pasar auditorias sin estres."
     ],
     "compra_mix": {
       "quimicos": 65,
@@ -147,40 +176,57 @@
         "cta": "Solicitar kit"
       }
     ],
-    "pitch": "Nos enfocamos en que su cocina o planta pase auditorias sin estres. Les damos una rutina por zonas, productos correctos y reposicion programada. Menos improvisacion, mas control.",
+    "actores": [
+      "Alicorp",
+      "Gloria",
+      "San Fernando",
+      "Cadenas de restaurantes y catering"
+    ],
+    "pitch": "Nos enfocamos en que su cocina o planta pase auditorias sin estres. Damos una rutina por zonas, productos correctos y reposicion programada. Menos improvisacion, mas control.",
     "source_ids": [
-      "src_fnb_segment",
-      "src_regulatory_framework",
-      "src_segment_ranking"
+      "src_doc_alimentos",
+      "src_doc_regulacion"
     ]
   },
   {
     "slug": "industria-logistica",
-    "nombre": "Industria y Logistica (Almacenes, Plantas, CD)",
+    "nombre": "Industria y Logistica (Almacenes, Plantas, Centros de distribucion)",
     "score": 78,
-    "clasificacion": "PRIORITARIO",
+    "clasificacion": "SECUNDARIO",
     "kpis": {
       "recompra": 75,
       "regulacion": 80,
-      "sensibilidad_precio": 45,
-      "ticket": 95,
-      "barreras": 88
+      "precio": 50,
+      "ticket": 90,
+      "barreras": 82
     },
     "resumen": "Aqui gana el proveedor que ahorra tiempo y evita paradas. Les importa eficiencia, continuidad y servicio rapido. El valor esta en una propuesta completa: equipos, consumibles y soporte.",
+    "dirigido_a": [
+      "Almacenes y centros de distribucion",
+      "Plantas industriales",
+      "Operaciones logisticas 24/7"
+    ],
+    "motivos_compra": [
+      "No pueden frenar la operacion por limpieza",
+      "Necesitan limpiar grandes areas rapido",
+      "Buscan bajar el costo por jornada"
+    ],
     "dolores": [
-      "No pueden frenar la operacion por limpieza.",
+      "No pueden parar la operacion.",
       "Pisos de alto trafico se deterioran rapido.",
-      "Si una maquina falla y no hay soporte, pierden dinero."
+      "Si una maquina falla y no hay soporte, pierden dinero.",
+      "Turnos nocturnos con poca supervision."
     ],
     "que_compra": [
-      "Maquinas (lavadoras, barredoras) segun tamano del local.",
-      "Quimicos concentrados para alto rendimiento.",
-      "Accesorios resistentes y consumibles."
+      "Maquinas (lavadoras, barredoras) segun tamano del local (anual o por proyecto).",
+      "Quimicos concentrados de alto rendimiento (recompra mensual).",
+      "Accesorios resistentes y consumibles (mensual)."
     ],
     "recomendaciones": [
-      "Vender costo por jornada y continuidad operativa.",
-      "Ofrecer plan preventivo + soporte + repuestos.",
-      "Proponer demo en sitio y medicion simple (tiempo ahorrado)."
+      "Vender continuidad operativa y costo por jornada.",
+      "Ofrecer plan preventivo con soporte y repuestos.",
+      "Proponer prueba en sitio con medicion de tiempo ahorrado.",
+      "Ofrecer servicio nocturno o de baja interferencia."
     ],
     "compra_mix": {
       "quimicos": 40,
@@ -188,8 +234,8 @@
       "maquinas": 45
     },
     "compra_modelo": {
-      "reactivo": 25,
-      "preventivo": 75
+      "reactivo": 30,
+      "preventivo": 70
     },
     "kits": [
       {
@@ -224,11 +270,16 @@
         "cta": "Solicitar kit"
       }
     ],
-    "pitch": "Ustedes no compran limpieza: compran continuidad. Les proponemos un sistema que limpia mas rapido, consume menos y tiene soporte para que nada se detenga.",
+    "actores": [
+      "Ransa",
+      "Dinet",
+      "Parques industriales Lurin-Chilca",
+      "Operadores logisticos en Callao"
+    ],
+    "pitch": "Ustedes no compran limpieza: compran continuidad. Proponemos un sistema que limpia mas rapido, consume menos y tiene soporte para que nada se detenga.",
     "source_ids": [
-      "src_industry_segment",
-      "src_lima_corridors",
-      "src_segment_ranking"
+      "src_doc_industria",
+      "src_doc_corredores"
     ]
   },
   {
@@ -239,34 +290,47 @@
     "kpis": {
       "recompra": 85,
       "regulacion": 55,
-      "sensibilidad_precio": 90,
+      "precio": 90,
       "ticket": 70,
-      "barreras": 65
+      "barreras": 70
     },
-    "resumen": "Este sector tiene volumen y visibilidad, pero negocia duro. Ganas si vendes con numeros simples: seguridad, imagen y costo por metro cuadrado. Ideal como sector de volumen, no el principal.",
+    "resumen": "Tiene volumen y visibilidad, pero negocia duro. Se gana con seguridad, imagen y costo por metro cuadrado. Es un sector de volumen, no el principal.",
+    "dirigido_a": [
+      "Supermercados",
+      "Centros comerciales",
+      "Tiendas por departamentos"
+    ],
+    "motivos_compra": [
+      "Evitar accidentes por pisos resbalosos",
+      "Cuidar la imagen del local",
+      "Reponer insumos por volumen"
+    ],
     "dolores": [
-      "Quejas por pisos resbalosos o malos olores.",
-      "Imagen del local (pisos, banos, patios de comida).",
-      "Necesidad de abastecer varias sedes sin fallar."
+      "Quejas por pisos resbalosos u olores.",
+      "Imagen de pisos, banos y patios de comida.",
+      "Abastecer varias sedes sin fallar.",
+      "Presion alta por precio."
     ],
     "que_compra": [
-      "Productos para pisos y banos.",
-      "Accesorios de alta rotacion.",
-      "Maquinas para mantener grandes areas."
+      "Productos para pisos y banos (recompra semanal).",
+      "Accesorios de alta rotacion (semanal).",
+      "Maquinas para grandes areas (trimestral o anual).",
+      "Papel y dispensadores (semanal)."
     ],
     "recomendaciones": [
       "Hablar de seguridad del cliente e imagen del local.",
-      "Ofrecer abastecimiento multi-sede.",
-      "Probar en 1 tienda y luego escalar."
+      "Vender costo por m2 con rutinas simples.",
+      "Probar en 1 tienda y luego escalar.",
+      "Plan de reposicion por sedes y control de consumo."
     ],
     "compra_mix": {
       "quimicos": 45,
-      "accesorios": 20,
-      "maquinas": 35
+      "accesorios": 25,
+      "maquinas": 30
     },
     "compra_modelo": {
-      "reactivo": 35,
-      "preventivo": 65
+      "reactivo": 40,
+      "preventivo": 60
     },
     "kits": [
       {
@@ -301,10 +365,16 @@
         "cta": "Solicitar kit"
       }
     ],
-    "pitch": "En retail ganamos con seguridad e imagen. Les damos rutina por zonas, abastecimiento confiable y un costo claro por metro cuadrado.",
+    "actores": [
+      "Wong",
+      "Plaza Vea",
+      "Tottus",
+      "Real Plaza"
+    ],
+    "pitch": "En retail ganamos con seguridad e imagen. Damos rutina por zonas, abastecimiento confiable y un costo claro por metro cuadrado.",
     "source_ids": [
-      "src_retail_segment",
-      "src_segment_ranking"
+      "src_doc_retail",
+      "src_doc_general"
     ]
   },
   {
@@ -315,24 +385,36 @@
     "kpis": {
       "recompra": 70,
       "regulacion": 45,
-      "sensibilidad_precio": 70,
+      "precio": 70,
       "ticket": 55,
       "barreras": 60
     },
-    "resumen": "Es un mercado mas tranquilo y sensible al precio. Vale la pena solo si hay cuentas grandes o contratos con buena frecuencia. Se gana con control de consumo, orden y presentacion.",
+    "resumen": "Es un mercado mas tranquilo y sensible al precio. Vale la pena si hay cuentas grandes o buena frecuencia. Se gana con control de consumo, orden y presentacion.",
+    "dirigido_a": [
+      "Oficinas corporativas",
+      "Edificios empresariales",
+      "Empresas con administracion de mantenimiento"
+    ],
+    "motivos_compra": [
+      "Cuidar imagen y bienestar del personal",
+      "Controlar el gasto mensual",
+      "Evitar faltantes de insumos"
+    ],
     "dolores": [
       "Mantener buena imagen sin gastar de mas.",
-      "Proveedores inconstantes (a veces falta producto).",
-      "Necesidad de orden y estandarizacion (sin complicarse)."
+      "Proveedores inconstantes.",
+      "Necesidad de orden y estandarizacion.",
+      "Preferencia por productos suaves y sostenibles."
     ],
     "que_compra": [
-      "Consumibles y productos de mantenimiento diario.",
-      "Accesorios simples (mopas, panos, etc.).",
-      "En algunos casos: productos verdes por imagen."
+      "Consumibles y productos de mantenimiento diario (semanal).",
+      "Accesorios simples como mopas y panos (mensual).",
+      "Productos verdes por imagen (mensual)."
     ],
     "recomendaciones": [
       "Gasto predecible y reposicion programada.",
-      "Control basico de consumo por area.",
+      "Control basico por area.",
+      "Sistema de dosificacion simple para evitar desperdicio.",
       "Enfoque en orden y presentacion."
     ],
     "compra_mix": {
@@ -341,8 +423,8 @@
       "maquinas": 20
     },
     "compra_modelo": {
-      "reactivo": 20,
-      "preventivo": 80
+      "reactivo": 25,
+      "preventivo": 75
     },
     "kits": [
       {
@@ -376,10 +458,16 @@
         "cta": "Solicitar kit"
       }
     ],
+    "actores": [
+      "BCP",
+      "BBVA",
+      "Interbank",
+      "Administradoras de edificios"
+    ],
     "pitch": "Les ayudamos a mantener la oficina impecable con un consumo controlado y reposicion programada. Menos desperdicio, mas orden.",
     "source_ids": [
-      "src_corporate_segment",
-      "src_segment_ranking"
+      "src_doc_corporativo",
+      "src_doc_general"
     ]
   }
 ]

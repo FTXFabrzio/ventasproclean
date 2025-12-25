@@ -46,10 +46,10 @@ export default function FuentesPage() {
           Fuentes
         </p>
         <h1 className="mt-2 text-3xl font-semibold text-foreground">
-          Biblioteca de fuentes
+          Todas las fuentes del plan
         </h1>
         <p className="mt-2 text-sm text-foreground/70">
-          Busqueda por sector, tema o palabra clave.
+          Busca por sector, tema o palabra clave.
         </p>
       </header>
 

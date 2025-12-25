@@ -8,6 +8,7 @@ type SectorCardProps = {
 };
 
 const badgeStyles: Record<string, string> = {
+  CORE: "bg-primary text-primary-foreground",
   PRIORITARIO: "bg-primary text-primary-foreground",
   SECUNDARIO: "bg-muted text-foreground",
   "NO FOCO": "bg-background text-foreground/60 border",

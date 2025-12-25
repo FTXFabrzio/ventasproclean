@@ -6,31 +6,31 @@ import { getCompetitors, getSources, type Source } from "@/lib/data";
 
 const opportunities = [
   {
-    title: "Auditorias y cumplimiento como servicio",
+    title: "Ayuda para pasar auditorias",
     detail:
-      "Empaquetar auditorias y reportes para justificar la recompra en sectores regulados.",
-    source_ids: ["src_regulatory_framework", "src_health_segment", "src_fnb_segment"],
+      "Salud y alimentos compran cuando ven orden, registro y cumplimiento.",
+    source_ids: ["src_doc_regulacion", "src_doc_salud", "src_doc_alimentos"],
   },
   {
-    title: "Optimizar costo total por m2",
+    title: "Bajar costo por metro cuadrado",
     detail:
-      "Ofrecer dosificacion y capacitacion para reducir consumo y costos.",
-    source_ids: ["src_industry_segment", "src_retail_segment", "src_market_context"],
+      "Dosificacion simple y rutinas claras reducen desperdicio.",
+    source_ids: ["src_doc_industria", "src_doc_retail", "src_doc_general"],
   },
 ];
 
 const differentiators = [
   {
-    title: "Kits comerciales por proceso",
+    title: "Kits simples por area",
     detail:
-      "Paquetes por area critica con reposicion programada e inventarios minimos.",
-    source_ids: ["src_health_segment", "src_fnb_segment"],
+      "Paquetes por zona critica con reposicion programada.",
+    source_ids: ["src_doc_salud", "src_doc_alimentos"],
   },
   {
-    title: "Soporte tecnico con acuerdo de nivel de servicio",
+    title: "Soporte tecnico rapido",
     detail:
-      "Asegurar mantenimiento preventivo y respuesta en 24-48h.",
-    source_ids: ["src_benchmark", "src_industry_segment"],
+      "Mantenimiento preventivo y respuesta rapida cuando algo falla.",
+    source_ids: ["src_doc_competencia", "src_doc_industria"],
   },
 ];
 
@@ -54,10 +54,10 @@ export default function BenchmarkPage() {
           Comparativa de competencia
         </p>
         <h1 className="mt-2 text-3xl font-semibold text-foreground">
-          Competidores clave
+          Competidores y oportunidades
         </h1>
         <p className="mt-2 text-sm text-foreground/70">
-          Mapa competitivo y oportunidades para ProClean.
+          Resumen claro de como esta el mercado.
         </p>
       </header>
 
@@ -77,7 +77,7 @@ export default function BenchmarkPage() {
                     {competitor.nombre}
                   </h3>
                   <p className="text-xs text-foreground/60">
-                    Foco: {competitor.foco}
+                    Se enfoca en: {competitor.foco}
                   </p>
                 </div>
                 <button
@@ -110,7 +110,7 @@ export default function BenchmarkPage() {
       <section className="rounded-2xl border bg-muted p-6 shadow-sm">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-xl font-semibold text-foreground">
-            Hallazgos de oportunidades
+            Oportunidades claras
           </h2>
           <button
             type="button"

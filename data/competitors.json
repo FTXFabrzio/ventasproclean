@@ -1,36 +1,36 @@
 [
   {
     "nombre": "Diversey / Ecolab",
-    "foco": "Sistemas integrales + contratos de valor; priorizan Salud, Alimentos y Bebidas, Hoteleria",
-    "propuesta": "Ecosistemas de seguridad, dilucion precisa, programas consolidados",
+    "foco": "Soluciones completas para grandes cuentas (salud, alimentos, hoteleria)",
+    "propuesta": "Programas completos con equipos, quimicos y soporte",
     "debilidades": [
-      "Precios superiores",
-      "Burocracia corporativa ralentiza decisiones",
-      "Postventa enfocada solo en cuentas de alto nivel"
+      "Precios altos",
+      "Procesos lentos",
+      "Menor cercania en cuentas medianas"
     ],
-    "notas": "Oportunidad: ganar con cercania, flexibilidad y servicio total local.",
-    "source_ids": ["src_benchmark"]
+    "notas": "Oportunidad: ganar con cercania, flexibilidad y servicio rapido.",
+    "source_ids": ["src_doc_competencia"]
   },
   {
     "nombre": "Klaxen / Sapolio Institucional",
-    "foco": "Catalogo + distribuidores; fuerte en Industria y Sector Publico",
-    "propuesta": "Marca local reconocida, precios competitivos, agilidad de entrega (quimicos basicos)",
+    "foco": "Catalogo amplio y distribuidores; fuerte en industria y sector publico",
+    "propuesta": "Marca local reconocida, entrega rapida en quimicos basicos",
     "debilidades": [
-      "Menor especializacion en maquinaria compleja",
-      "Soporte tecnico limitado para equipos de alta gama"
+      "Menor especializacion en maquinaria",
+      "Soporte tecnico limitado"
     ],
-    "notas": "Oportunidad: ProClean como especialista en maquinaria + postventa y acuerdo de nivel de servicio.",
-    "source_ids": ["src_benchmark"]
+    "notas": "Oportunidad: ProClean como especialista en maquinaria y postventa.",
+    "source_ids": ["src_doc_competencia"]
   },
   {
-    "nombre": "Empresas de Servicios (Sodexo / Eulen / SILSA)",
-    "foco": "Tercerizacion; controlan compra de insumos por contrato",
-    "propuesta": "Relacion directa con cliente final y dominio de operacion diaria",
+    "nombre": "Empresas de servicios (Sodexo / Eulen / SILSA)",
+    "foco": "Tercerizacion y compra por contrato",
+    "propuesta": "Controlan la operacion diaria del cliente",
     "debilidades": [
-      "Priorizan ahorro en insumos para maximizar margen",
-      "Puede degradar calidad de higiene"
+      "Buscan bajar costos de insumos",
+      "Pueden afectar la calidad de higiene"
     ],
-    "notas": "Estrategia: entrar como proveedor validado y mostrar retorno de inversion + cumplimiento normativo.",
-    "source_ids": ["src_benchmark"]
+    "notas": "Estrategia: entrar como proveedor validado y mostrar ahorro + cumplimiento.",
+    "source_ids": ["src_doc_competencia"]
   }
 ]

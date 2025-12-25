@@ -10,22 +10,22 @@ import { formatScore } from "@/lib/format";
 
 const decisions = [
   {
-    title: "Concentrar esfuerzo en salud y alimentos y bebidas",
+    title: "Poner foco en salud y alimentos y bebidas",
     detail:
-      "Priorizar cuentas prioritarias para capturar recompra y contratos preventivos.",
-    source_ids: ["src_segment_ranking", "src_health_segment", "src_fnb_segment"],
+      "Son sectores que compran por norma y necesitan reposicion constante.",
+    source_ids: ["src_doc_salud", "src_doc_alimentos", "src_doc_general"],
   },
   {
-    title: "Migrar a planes preventivos trimestrales",
+    title: "Vender planes simples de reposicion",
     detail:
-      "Estandarizar kits y reposicion programada para reducir compras reactivas.",
-    source_ids: ["src_health_segment", "src_fnb_segment", "src_industry_segment"],
+      "Kits + calendario ayudan a dar orden y a vender mas sin complicaciones.",
+    source_ids: ["src_doc_plan", "src_doc_salud", "src_doc_alimentos"],
   },
   {
-    title: "Acelerar cobertura en corredores de Lima",
+    title: "Cubrir primero los corredores con mas demanda",
     detail:
-      "Enfocar visitas comerciales en Centro, Sur, Norte y Callao.",
-    source_ids: ["src_lima_corridors"],
+      "Centro, Sur, Norte y Callao concentran operaciones clave.",
+    source_ids: ["src_doc_corredores"],
   },
 ];
 
@@ -41,7 +41,7 @@ export default function Home() {
       (acc, sector) => {
         acc.recompra += sector.kpis.recompra;
         acc.regulacion += sector.kpis.regulacion;
-        acc.sensibilidad_precio += sector.kpis.sensibilidad_precio;
+        acc.precio += sector.kpis.precio;
         acc.ticket += sector.kpis.ticket;
         acc.barreras += sector.kpis.barreras;
         return acc;
@@ -49,7 +49,7 @@ export default function Home() {
       {
         recompra: 0,
         regulacion: 0,
-        sensibilidad_precio: 0,
+        precio: 0,
         ticket: 0,
         barreras: 0,
       }
@@ -59,7 +59,7 @@ export default function Home() {
     return {
       recompra: totals.recompra / count,
       regulacion: totals.regulacion / count,
-      sensibilidad_precio: totals.sensibilidad_precio / count,
+      precio: totals.precio / count,
       ticket: totals.ticket / count,
       barreras: totals.barreras / count,
     };
@@ -80,23 +80,23 @@ export default function Home() {
     <div className="space-y-10">
       <section className="rounded-2xl border bg-muted p-6 shadow-sm">
         <p className="text-xs uppercase tracking-wide text-foreground/60">
-          Resumen Ejecutivo
+          Resumen ejecutivo
         </p>
         <h1 className="mt-2 text-3xl font-semibold text-foreground">
           Plan de Ventas 2026 - ProClean (Lima)
         </h1>
         <p className="mt-2 text-sm text-foreground/70">
-          Preparado para: Henrry Abner Diaz Cueva
+          Presentado por Henrry Abner Diaz Cueva
         </p>
       </section>
 
       <section>
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-xl font-semibold text-foreground">
-            3 decisiones 2026
+            Decisiones clave 2026
           </h2>
           <span className="rounded-full bg-muted px-3 py-1 text-xs text-foreground/70">
-            Panel de decisiones
+            En pocas lineas
           </span>
         </div>
         <div className="mt-4 grid gap-4 md:grid-cols-3">
@@ -133,7 +133,7 @@ export default function Home() {
           </h2>
           <div className="flex flex-wrap gap-2 text-xs">
             <span className="rounded-full bg-primary px-3 py-1 text-primary-foreground">
-              PRIORITARIO
+              CORE
             </span>
             <span className="rounded-full bg-muted px-3 py-1 text-foreground/70">
               SECUNDARIO
@@ -156,30 +156,34 @@ export default function Home() {
       <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="rounded-2xl border bg-muted p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-foreground">
-            Indicadores globales
+            Resumen rapido por sector
           </h2>
           <p className="mt-2 text-sm text-foreground/70">
-            Promedio ponderado de los sectores priorizados.
+            Promedio simple para entender la foto general.
           </p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             <KPIChip
-              label="Recompra"
+              label="Frecuencia de compra"
               value={kpiAverages.recompra}
               helper="/100"
             />
             <KPIChip
-              label="Regulacion"
+              label="Exigencia de normas"
               value={kpiAverages.regulacion}
               helper="/100"
             />
             <KPIChip
-              label="Sensibilidad precio"
-              value={kpiAverages.sensibilidad_precio}
+              label="Que tanto pelean el precio"
+              value={kpiAverages.precio}
               helper="/100"
             />
-            <KPIChip label="Ticket" value={kpiAverages.ticket} helper="/100" />
             <KPIChip
-              label="Barreras"
+              label="Ticket promedio"
+              value={kpiAverages.ticket}
+              helper="/100"
+            />
+            <KPIChip
+              label="Que te exige el cliente para comprarte"
               value={kpiAverages.barreras}
               helper="/100"
             />
@@ -188,12 +192,12 @@ export default function Home() {
         <div className="rounded-2xl border bg-muted p-6 shadow-sm">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <h2 className="text-xl font-semibold text-foreground">
-              Orden por atractivo
+              Ranking de atractivo
             </h2>
             <span className="text-xs text-foreground/60">Puntaje 0-100</span>
           </div>
           <p className="mt-2 text-sm text-foreground/70">
-            Comparativo por sector para 2026.
+            Comparativo simple para 2026.
           </p>
           <div className="mt-4">
             <ScoreChart data={chartData} />
@@ -208,13 +212,13 @@ export default function Home() {
               Corredores de Lima
             </h2>
             <p className="mt-1 text-sm text-foreground/70">
-              Priorizacion territorial para 2025-2026.
+              Zonas donde hay mas oportunidades.
             </p>
           </div>
           <button
             type="button"
             onClick={() =>
-              openSources("Corredores de Lima", ["src_lima_corridors"])
+              openSources("Corredores de Lima", ["src_doc_corredores"])
             }
             className="rounded-full border px-4 py-2 text-xs text-foreground/70 transition hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
             aria-label="Ver fuentes de corredores"
@@ -255,7 +259,7 @@ export default function Home() {
           ))}
         </div>
         <p className="mt-4 text-xs text-foreground/60">
-          Puntaje promedio:{" "}
+          Puntaje promedio de atractivo:{" "}
           {formatScore(
             sectors.reduce((acc, sector) => acc + sector.score, 0) /
               sectors.length
