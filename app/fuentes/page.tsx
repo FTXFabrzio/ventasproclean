@@ -41,7 +41,7 @@ export default function FuentesPage() {
 
   return (
     <div className="space-y-8">
-      <header className="rounded-2xl border bg-muted/50 p-6 shadow-sm">
+      <header className="rounded-2xl border bg-muted p-6 shadow-sm">
         <p className="text-xs uppercase tracking-wide text-foreground/60">
           Fuentes
         </p>
@@ -49,11 +49,11 @@ export default function FuentesPage() {
           Biblioteca de fuentes
         </h1>
         <p className="mt-2 text-sm text-foreground/70">
-          Busqueda por sector, tema o keyword.
+          Busqueda por sector, tema o palabra clave.
         </p>
       </header>
 
-      <section className="rounded-2xl border bg-background p-6 shadow-sm">
+      <section className="rounded-2xl border bg-muted p-6 shadow-sm">
         <FilterBar
           themes={themes}
           activeTheme={activeTheme}

@@ -1,12 +1,12 @@
 [
   {
     "nombre": "Diversey / Ecolab",
-    "foco": "Sistemas integrales + contratos de valor; priorizan Salud, F&B, Hoteleria",
+    "foco": "Sistemas integrales + contratos de valor; priorizan Salud, Alimentos y Bebidas, Hoteleria",
     "propuesta": "Ecosistemas de seguridad, dilucion precisa, programas consolidados",
     "debilidades": [
-      "Precios premium",
+      "Precios superiores",
       "Burocracia corporativa ralentiza decisiones",
-      "Postventa enfocada solo en cuentas AAA"
+      "Postventa enfocada solo en cuentas de alto nivel"
     ],
     "notas": "Oportunidad: ganar con cercania, flexibilidad y servicio total local.",
     "source_ids": ["src_benchmark"]
@@ -19,18 +19,18 @@
       "Menor especializacion en maquinaria compleja",
       "Soporte tecnico limitado para equipos de alta gama"
     ],
-    "notas": "Oportunidad: ProClean como especialista en maquinaria + postventa/SLA.",
+    "notas": "Oportunidad: ProClean como especialista en maquinaria + postventa y acuerdo de nivel de servicio.",
     "source_ids": ["src_benchmark"]
   },
   {
     "nombre": "Empresas de Servicios (Sodexo / Eulen / SILSA)",
-    "foco": "Outsourcing; controlan compra de insumos por contrato",
+    "foco": "Tercerizacion; controlan compra de insumos por contrato",
     "propuesta": "Relacion directa con cliente final y dominio de operacion diaria",
     "debilidades": [
       "Priorizan ahorro en insumos para maximizar margen",
       "Puede degradar calidad de higiene"
     ],
-    "notas": "Estrategia: entrar como proveedor validado y mostrar ROI + compliance.",
+    "notas": "Estrategia: entrar como proveedor validado y mostrar retorno de inversion + cumplimiento normativo.",
     "source_ids": ["src_benchmark"]
   }
 ]

@@ -23,11 +23,11 @@ const differentiators = [
   {
     title: "Kits comerciales por proceso",
     detail:
-      "Paquetes por area critica con reposicion programada y stocks minimos.",
+      "Paquetes por area critica con reposicion programada e inventarios minimos.",
     source_ids: ["src_health_segment", "src_fnb_segment"],
   },
   {
-    title: "Soporte tecnico con SLA claro",
+    title: "Soporte tecnico con acuerdo de nivel de servicio",
     detail:
       "Asegurar mantenimiento preventivo y respuesta en 24-48h.",
     source_ids: ["src_benchmark", "src_industry_segment"],
@@ -49,9 +49,9 @@ export default function BenchmarkPage() {
 
   return (
     <div className="space-y-8">
-      <header className="rounded-2xl border bg-muted/50 p-6 shadow-sm">
+      <header className="rounded-2xl border bg-muted p-6 shadow-sm">
         <p className="text-xs uppercase tracking-wide text-foreground/60">
-          Benchmark
+          Comparativa de competencia
         </p>
         <h1 className="mt-2 text-3xl font-semibold text-foreground">
           Competidores clave
@@ -69,9 +69,9 @@ export default function BenchmarkPage() {
           {competitors.map((competitor) => (
             <div
               key={competitor.nombre}
-              className="rounded-xl border bg-background p-5 shadow-sm"
+              className="rounded-xl border bg-muted p-5 shadow-sm"
             >
-              <div className="flex items-center justify-between gap-3">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">
                     {competitor.nombre}
@@ -107,10 +107,10 @@ export default function BenchmarkPage() {
         </div>
       </section>
 
-      <section className="rounded-2xl border bg-background p-6 shadow-sm">
-        <div className="flex items-center justify-between gap-3">
+      <section className="rounded-2xl border bg-muted p-6 shadow-sm">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-xl font-semibold text-foreground">
-            Insight de oportunidades
+            Hallazgos de oportunidades
           </h2>
           <button
             type="button"
@@ -138,8 +138,8 @@ export default function BenchmarkPage() {
         </div>
       </section>
 
-      <section className="rounded-2xl border bg-background p-6 shadow-sm">
-        <div className="flex items-center justify-between gap-3">
+      <section className="rounded-2xl border bg-muted p-6 shadow-sm">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-xl font-semibold text-foreground">Como ganar</h2>
           <button
             type="button"

@@ -2,14 +2,8 @@ import SectorDetail from "@/components/SectorDetail";
 import SectorNotFound from "@/components/SectorNotFound";
 import { getSectorBySlug, getSources } from "@/lib/data";
 
-type SectorPageProps = {
-  params: {
-    slug: string;
-  };
-};
-
-export default function SectorPage({ params }: SectorPageProps) {
-  const sector = getSectorBySlug(params.slug);
+export default function RetailPage() {
+  const sector = getSectorBySlug("retail");
 
   if (!sector) {
     return <SectorNotFound />;

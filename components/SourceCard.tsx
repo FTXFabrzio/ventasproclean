@@ -20,8 +20,8 @@ export default function SourceCard({
       : source.extracto;
 
   return (
-    <div className="rounded-xl border bg-background p-4 shadow-sm">
-      <div className="flex items-start justify-between gap-3">
+    <div className="rounded-xl border bg-muted p-4 shadow-sm">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h4 className="text-sm font-semibold text-foreground">
             {source.titulo}

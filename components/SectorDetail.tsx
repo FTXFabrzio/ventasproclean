@@ -27,7 +27,7 @@ type SectorDetailProps = {
 };
 
 const badgeStyles: Record<string, string> = {
-  CORE: "bg-primary text-primary-foreground",
+  PRIORITARIO: "bg-primary text-primary-foreground",
   SECUNDARIO: "bg-muted text-foreground",
   "NO FOCO": "bg-background text-foreground/60 border",
 };
@@ -81,7 +81,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
 
   return (
     <div className="space-y-8">
-      <header className="rounded-2xl border bg-muted/50 p-6 shadow-sm">
+      <header className="rounded-2xl border bg-muted p-6 shadow-sm">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-xs uppercase tracking-wide text-foreground/60">
@@ -92,12 +92,12 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
             </h1>
             <p className="mt-2 text-sm text-foreground/70">{sector.resumen}</p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className={`rounded-full px-3 py-1 text-xs ${badgeClass}`}>
               {sector.clasificacion}
             </span>
             <span className="rounded-full border px-3 py-1 text-xs text-foreground/70">
-              Score {sector.score}/100
+              Puntaje {sector.score}/100
             </span>
           </div>
         </div>
@@ -126,9 +126,9 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
 
       <div className="grid gap-8 lg:grid-cols-[1fr_320px]">
         <div className="space-y-8">
-          <section className="rounded-2xl border bg-background p-6 shadow-sm">
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-foreground">
-              Dolor y drivers 2025-2026
+              Dolores e impulsores 2025-2026
             </h2>
             <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-foreground/70">
               {sector.dolores.map((dolor) => (
@@ -137,10 +137,10 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
             </ul>
           </section>
 
-          <section className="rounded-2xl border bg-background p-6 shadow-sm">
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <h2 className="text-lg font-semibold text-foreground">
-                Que compra
+                Que compran (en simple)
               </h2>
               <p className="text-xs text-foreground/60">
                 Mix estimado por tipo de producto
@@ -178,9 +178,14 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
                 </BarChart>
               </ResponsiveContainer>
             </div>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-foreground/70">
+              {sector.que_compra.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </section>
 
-          <section className="rounded-2xl border bg-background p-6 shadow-sm">
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <h2 className="text-lg font-semibold text-foreground">
                 Modelo de compra
@@ -230,16 +235,16 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
             </div>
           </section>
 
-          <section className="rounded-2xl border bg-background p-6 shadow-sm">
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
               <h2 className="text-lg font-semibold text-foreground">
-                Recomendacion 2026
+                Como se gana la venta
               </h2>
               <button
                 type="button"
                 onClick={() => setDrawerOpen(true)}
                 className="rounded-full border px-4 py-2 text-xs text-foreground/70 transition hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
-                aria-label="Ver fuentes de recomendacion"
+                aria-label="Ver fuentes de como se gana"
               >
                 Ver fuentes
               </button>
@@ -251,7 +256,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
             </ul>
           </section>
 
-          <section className="rounded-2xl border bg-background p-6 shadow-sm">
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-foreground">
               Kits comerciales
             </h2>
@@ -259,7 +264,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
               {sector.kits.map((kit) => (
                 <div
                   key={kit.nombre}
-                  className="flex flex-col gap-3 rounded-xl border bg-muted/50 p-4"
+                  className="flex flex-col gap-3 rounded-xl border bg-muted p-4"
                 >
                   <div>
                     <h3 className="text-sm font-semibold text-foreground">
@@ -277,7 +282,7 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
                   <button
                     type="button"
                     className="mt-auto rounded-lg bg-primary px-3 py-2 text-xs font-medium text-primary-foreground transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
-                    aria-label={`CTA ${kit.nombre}`}
+                    aria-label={`Accion ${kit.nombre}`}
                   >
                     {kit.cta}
                   </button>
@@ -285,13 +290,20 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
               ))}
             </div>
           </section>
+
+          <section className="rounded-2xl border bg-muted p-6 shadow-sm">
+            <h2 className="text-lg font-semibold text-foreground">
+              Mensaje de 30 segundos
+            </h2>
+            <p className="mt-3 text-sm text-foreground/70">{sector.pitch}</p>
+          </section>
         </div>
 
         <aside className="hidden h-fit rounded-2xl border bg-muted/40 p-4 shadow-sm lg:block lg:sticky lg:top-24">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold text-foreground">Fuentes</h3>
             <span className="text-xs text-foreground/60">
-              {filteredSources.length} items
+              {filteredSources.length} fuentes
             </span>
           </div>
           <div className="mt-4">
@@ -304,9 +316,15 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
             />
           </div>
           <div className="mt-4 space-y-3">
-            {filteredSources.map((source) => (
-              <SourceCard key={source.id} source={source} />
-            ))}
+            {filteredSources.length === 0 ? (
+              <div className="rounded-xl border bg-muted/60 p-4 text-sm text-foreground/60">
+                No hay fuentes registradas para este sector todavia.
+              </div>
+            ) : (
+              filteredSources.map((source) => (
+                <SourceCard key={source.id} source={source} />
+              ))
+            )}
           </div>
         </aside>
       </div>
@@ -325,9 +343,15 @@ export default function SectorDetail({ sector, sources }: SectorDetailProps) {
           onQueryChange={setQuery}
         />
         <div className="mt-4 space-y-3">
-          {filteredSources.map((source) => (
-            <SourceCard key={source.id} source={source} />
-          ))}
+          {filteredSources.length === 0 ? (
+            <div className="rounded-xl border bg-muted/60 p-4 text-sm text-foreground/60">
+              No hay fuentes registradas para este sector todavia.
+            </div>
+          ) : (
+            filteredSources.map((source) => (
+              <SourceCard key={source.id} source={source} />
+            ))
+          )}
         </div>
       </SourceDrawer>
     </div>

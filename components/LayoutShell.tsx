@@ -4,21 +4,19 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import type { Sector } from "@/lib/data";
 
 type LayoutShellProps = {
   children: React.ReactNode;
-  sectors: Sector[];
 };
 
 const navItems = [
-  { label: "Executive Summary", href: "/" },
-  { label: "Benchmark", href: "/benchmark" },
+  { label: "Resumen Ejecutivo", href: "/" },
+  { label: "Comparativa de competencia", href: "/benchmark" },
   { label: "Plan 2026", href: "/plan-2026" },
   { label: "Fuentes", href: "/fuentes" },
 ];
 
-export default function LayoutShell({ children, sectors }: LayoutShellProps) {
+export default function LayoutShell({ children }: LayoutShellProps) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -48,24 +46,24 @@ export default function LayoutShell({ children, sectors }: LayoutShellProps) {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-30 flex items-center justify-between border-b bg-background/90 px-4 py-3 backdrop-blur lg:hidden">
-        <div>
+    <div className="min-h-screen overflow-x-hidden bg-background">
+      <header className="sticky top-0 z-30 flex items-center justify-between gap-3 border-b bg-background/90 px-4 py-3 backdrop-blur lg:hidden">
+        <div className="min-w-0">
           <p className="text-xs uppercase tracking-wide text-foreground/60">
             ProClean
           </p>
-          <h1 className="text-base font-semibold text-foreground">
+          <h1 className="text-sm font-semibold leading-snug text-foreground sm:text-base">
             Plan de Ventas 2026
           </h1>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <button
             type="button"
             onClick={toggleTheme}
             className="rounded-full border px-3 py-1 text-xs text-foreground/70 transition hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
             aria-label="Cambiar tema"
           >
-            {mounted && theme === "dark" ? "Light" : "Dark"}
+            {mounted && theme === "dark" ? "Claro" : "Oscuro"}
           </button>
           <button
             type="button"
@@ -89,7 +87,7 @@ export default function LayoutShell({ children, sectors }: LayoutShellProps) {
             aria-label="Cerrar menu"
           />
           <div className="relative z-50 h-full w-72 bg-background p-6 shadow-soft">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-xs uppercase tracking-wide text-foreground/60">
                   ProClean
@@ -112,20 +110,6 @@ export default function LayoutShell({ children, sectors }: LayoutShellProps) {
                 <NavLink key={item.href} {...item} />
               ))}
             </nav>
-            <div className="mt-8">
-              <p className="text-xs uppercase tracking-wide text-foreground/60">
-                Sectores
-              </p>
-              <div className="mt-3 flex flex-col gap-2">
-                {sectors.map((sector) => (
-                  <NavLink
-                    key={sector.slug}
-                    href={`/sectores/${sector.slug}`}
-                    label={sector.nombre}
-                  />
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       ) : null}
@@ -145,20 +129,6 @@ export default function LayoutShell({ children, sectors }: LayoutShellProps) {
               <NavLink key={item.href} {...item} />
             ))}
           </nav>
-          <div className="mt-8">
-            <p className="text-xs uppercase tracking-wide text-foreground/60">
-              Sectores
-            </p>
-            <div className="mt-3 flex flex-col gap-2">
-              {sectors.map((sector) => (
-                <NavLink
-                  key={sector.slug}
-                  href={`/sectores/${sector.slug}`}
-                  label={sector.nombre}
-                />
-              ))}
-            </div>
-          </div>
           <div className="mt-auto pt-8">
             <button
               type="button"
@@ -167,8 +137,8 @@ export default function LayoutShell({ children, sectors }: LayoutShellProps) {
               aria-label="Cambiar tema"
             >
               {mounted && theme === "dark"
-                ? "Cambiar a light"
-                : "Cambiar a dark"}
+                ? "Cambiar a claro"
+                : "Cambiar a oscuro"}
             </button>
           </div>
         </aside>

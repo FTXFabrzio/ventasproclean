@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProviders } from "@/components/ThemeProvider";
 import LayoutShell from "@/components/LayoutShell";
-import { getSectors } from "@/lib/data";
 import "./globals.css";
 
 const inter = Inter({
@@ -12,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Plan de Ventas 2026 - ProClean (Lima)",
-  description: "Dashboard consultivo para planificacion comercial 2026.",
+  description: "Tablero consultivo para planificacion comercial 2026.",
 };
 
 export default function RootLayout({
@@ -20,13 +19,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const sectors = getSectors();
-
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} antialiased`}>
         <ThemeProviders>
-          <LayoutShell sectors={sectors}>{children}</LayoutShell>
+          <LayoutShell>{children}</LayoutShell>
         </ThemeProviders>
       </body>
     </html>

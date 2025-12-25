@@ -1,82 +1,82 @@
 [
   {
     "id": "src_market_context",
-    "titulo": "Contexto Macroeconomico y Mercado (valor 2025 y CAGR)",
+    "titulo": "Investigacion Mercado Limpieza Lima 2025-2026 - Contexto y mercado",
     "fecha": "2025-01-01",
-    "url": "https://inei.gob.pe/",
-    "extracto": "El mercado de limpieza en Peru alcanza ~US$1.29B (2025) y proyecta CAGR 7.1%. La higiene se percibe como activo critico para continuidad y reputacion.",
+    "url": "https://proclean.local/investigacion-mercado-limpieza-2026",
+    "extracto": "Panorama del mercado de limpieza profesional en Lima, dinamica de demanda y presion competitiva.",
     "tags": ["general", "mercado"]
   },
   {
     "id": "src_lima_corridors",
-    "titulo": "Corredores de Demanda en Lima (Centro/Sur/Norte/Callao)",
+    "titulo": "Investigacion Mercado Limpieza Lima 2025-2026 - Corredores de demanda",
     "fecha": "2025-01-01",
-    "url": "https://www.gob.pe/",
-    "extracto": "Lima Centro: eje administrativo/hospitalario. Lima Sur: industria y retail. Callao: especializacion portuaria. Lurin/Chilca concentra ~78% de superficie disponible en parques industriales.",
+    "url": "https://proclean.local/investigacion-mercado-lima-corredores",
+    "extracto": "Mapa de corredores con mayor concentracion de actividad (Centro, Sur, Norte y Callao).",
     "tags": ["general", "geografia"]
   },
   {
     "id": "src_industry_segment",
-    "titulo": "Industria y Logistica: compra preventiva, maquinaria y barreras",
+    "titulo": "Investigacion Mercado Limpieza - Industria y Logistica",
     "fecha": "2025-01-01",
-    "url": "https://www.gob.pe/minsa",
-    "extracto": "Compra mayoritariamente preventiva con contratos anuales. Barreras: homologacion (SGS/Hodelpe) y servicio tecnico inmediato en sitio. Tendencia a automatizacion e IoT.",
-    "tags": ["industria-logistica", "segmento"]
+    "url": "https://proclean.local/investigacion-mercado-industria-logistica",
+    "extracto": "Segmento con alta demanda de maquinaria, limpieza nocturna y contratos preventivos.",
+    "tags": ["industria-logistica", "impulsores"]
   },
   {
     "id": "src_health_segment",
-    "titulo": "Salud: alta exigencia tecnica y 32.8% del ingreso del mercado",
+    "titulo": "Investigacion Mercado Limpieza - Salud",
     "fecha": "2025-01-01",
-    "url": "https://www.gob.pe/digesa",
-    "extracto": "Segmento sanitario critico: protocolos DIGESA, DAN, residuos; recompra semanal/quincenal. Representa ~32.8% del mercado de limpieza profesional en ingresos.",
-    "tags": ["salud", "segmento"]
+    "url": "https://proclean.local/investigacion-mercado-salud",
+    "extracto": "Sector mas exigente, con recompra frecuente y protocolos estrictos de bioseguridad.",
+    "tags": ["salud", "impulsores"]
   },
   {
     "id": "src_retail_segment",
-    "titulo": "Retail: alta sensibilidad al precio y costo por visita ($0.08-$0.15/m2)",
+    "titulo": "Investigacion Mercado Limpieza - Retail",
     "fecha": "2025-01-01",
-    "url": "https://www.asi.com.pe/",
-    "extracto": "Retail dinamico; costos por m2 por visita y presion por precio. Requiere logistica multi-sede y seguridad (evitar caidas).",
-    "tags": ["retail", "segmento"]
+    "url": "https://proclean.local/investigacion-mercado-retail",
+    "extracto": "Alta exposicion publica y presion por costo por m2, con foco en pisos y seguridad.",
+    "tags": ["retail", "impulsores"]
   },
   {
     "id": "src_fnb_segment",
-    "titulo": "Food & Beverage: HACCP/PHS obligatorio y costos hasta ~$0.25/m2",
+    "titulo": "Investigacion Mercado Limpieza - Alimentos y Bebidas",
     "fecha": "2025-01-01",
-    "url": "https://www.gob.pe/digesa",
-    "extracto": "F&B regulado: HACCP, PHS, auditorias. Compra preventiva obligatoria con registros auditables. Costos pueden llegar a $0.25/m2 en cocinas comerciales.",
-    "tags": ["food-beverage", "segmento"]
+    "url": "https://proclean.local/investigacion-mercado-alimentos-bebidas",
+    "extracto": "Cumplimiento HACCP/PHS, auditorias y recompra semanal por turnos.",
+    "tags": ["alimentos-bebidas", "impulsores"]
   },
   {
     "id": "src_corporate_segment",
-    "titulo": "Corporativo: contratos via outsourcing, sostenibilidad (LEED/WELL) y dosificacion",
+    "titulo": "Investigacion Mercado Limpieza - Corporativo",
     "fecha": "2025-01-01",
-    "url": "https://www.usgbc.org/leed",
-    "extracto": "Demanda estabilizada por trabajo hibrido. Oportunidad: dosificacion para controlar gasto y productos con certificaciones ambientales.",
-    "tags": ["corporativo", "segmento"]
+    "url": "https://proclean.local/investigacion-mercado-corporativo",
+    "extracto": "Mercado maduro, sensible al precio y con foco en imagen y sostenibilidad.",
+    "tags": ["corporativo", "impulsores"]
   },
   {
     "id": "src_benchmark",
-    "titulo": "Benchmark Lima: multinacionales vs locales (brechas y oportunidad Servicio Total)",
+    "titulo": "Investigacion Mercado Limpieza - Comparativa competitiva",
     "fecha": "2025-01-01",
-    "url": "https://www.ecolab.com/",
-    "extracto": "Multinacionales: precio premium y postventa enfocada en AAA. Locales: soporte tecnico limitado; venden maquina sin garantizar repuestos/reparacion <48h. Oportunidad: Servicio Total (SLA + capacitacion).",
-    "tags": ["general", "benchmark"]
+    "url": "https://proclean.local/investigacion-mercado-comparativa",
+    "extracto": "Brechas entre multinacionales y locales, y oportunidad de servicio total.",
+    "tags": ["general", "comparativa"]
   },
   {
     "id": "src_regulatory_framework",
-    "titulo": "Marco regulatorio como herramienta comercial (DIGESA/DS 031-2023-SA, SST, Homologacion, HACCP)",
+    "titulo": "Investigacion Mercado Limpieza - Marco regulatorio",
     "fecha": "2025-01-01",
-    "url": "https://www.gob.pe/minsa",
-    "extracto": "Cumplimiento normativo como argumento de venta: DS 031-2023-SA, Ley 29783, homologacion (SGS/Hodelpe) y validacion tecnica para Salud/F&B.",
+    "url": "https://proclean.local/investigacion-mercado-regulacion",
+    "extracto": "DIGESA, HACCP y exigencias sanitarias como impulsores de compra.",
     "tags": ["general", "regulacion"]
   },
   {
     "id": "src_segment_ranking",
-    "titulo": "Ranking de Segmentos Estrategicos Lima 2026 (Salud #1, F&B #2, Industria #3)",
+    "titulo": "Investigacion Mercado Limpieza - Orden de segmentos",
     "fecha": "2025-01-01",
-    "url": "https://www.inei.gob.pe/",
-    "extracto": "Ranking por atractivo comercial: Salud primero (margenes altos, demanda inelastica), luego Food & Beverage (recompra semanal y barreras tecnicas), luego Industria y Logistica (volumen y CAPEX).",
+    "url": "https://proclean.local/investigacion-mercado-ranking",
+    "extracto": "Orden de atractivo comercial: Salud y Alimentos y Bebidas como prioritarios, Industria y Retail como secundarios.",
     "tags": ["general", "estrategia"]
   }
 ]

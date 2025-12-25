@@ -64,7 +64,7 @@ export default function SourceDrawer({
         ref={panelRef}
         className={panelClasses}
       >
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-xs uppercase tracking-wide text-foreground/60">
               {title}

@@ -18,7 +18,7 @@ export default function Tabs({ tabs, defaultTab }: TabsProps) {
   const activeTab = tabs.find((tab) => tab.id === active);
 
   return (
-    <div className="rounded-xl border bg-background p-4 shadow-sm">
+    <div className="rounded-xl border bg-muted p-4 shadow-sm">
       <div className="flex flex-wrap gap-2">
         {tabs.map((tab) => (
           <button
@@ -30,7 +30,7 @@ export default function Tabs({ tabs, defaultTab }: TabsProps) {
                 ? "border-primary bg-primary text-primary-foreground"
                 : "border-border text-foreground/70 hover:border-primary"
             }`}
-            aria-label={`Tab ${tab.label}`}
+            aria-label={`Pestana ${tab.label}`}
           >
             {tab.label}
           </button>

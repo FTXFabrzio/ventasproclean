@@ -9,13 +9,13 @@ const roadmapItems = [
     title: "Q1 - Preparacion comercial",
     period: "Ene-Mar",
     detail:
-      "Definir segmentos prioritarios, actualizar argumentarios y cerrar primeras cuentas core.",
+      "Definir segmentos prioritarios, actualizar argumentarios y cerrar primeras cuentas prioritarias.",
   },
   {
     title: "Q2 - Expansiones focalizadas",
     period: "Abr-Jun",
     detail:
-      "Escalar kits y contratos preventivos en salud y food & beverage.",
+      "Escalar kits y contratos preventivos en salud y alimentos y bebidas.",
   },
   {
     title: "Q3 - Consolidacion territorial",
@@ -24,27 +24,27 @@ const roadmapItems = [
       "Aumentar cobertura en corredores Sur, Centro y Callao con equipos dedicados.",
   },
   {
-    title: "Q4 - Retencion y upsell",
+    title: "Q4 - Retencion y venta adicional",
     period: "Oct-Dic",
     detail:
-      "Renovar contratos y lanzar bundles por proceso para 2027.",
+      "Renovar contratos y lanzar paquetes por proceso para 2027.",
   },
 ];
 
 const funnelStages = [
-  { stage: "Prospeccion", detail: "Base de cuentas core y leads referidos." },
+  { stage: "Prospeccion", detail: "Base de cuentas prioritarias y prospectos referidos." },
   { stage: "Diagnostico", detail: "Auditoria rapida y propuesta de kits." },
   { stage: "Piloto", detail: "Prueba de 30 dias con indicadores claros." },
-  { stage: "Contrato", detail: "Cierre con plan preventivo y SLA." },
-  { stage: "Expansion", detail: "Upsell por area y reposicion automatica." },
+  { stage: "Contrato", detail: "Cierre con plan preventivo y acuerdo de nivel de servicio." },
+  { stage: "Expansion", detail: "Venta adicional por area y reposicion automatica." },
 ];
 
 const channels = [
   { name: "WhatsApp comercial", priority: "Alta", note: "Seguimiento semanal." },
   { name: "Visitas tecnicas", priority: "Alta", note: "Agenda por corredor." },
-  { name: "Alianzas", priority: "Media", note: "Co-marketing con proveedores." },
-  { name: "Email nurturing", priority: "Media", note: "Secuencia educativa." },
-  { name: "Eventos sectoriales", priority: "Baja", note: "Focus Q3." },
+  { name: "Alianzas", priority: "Media", note: "Cooperacion comercial con proveedores." },
+  { name: "Nutricion por correo", priority: "Media", note: "Secuencia educativa." },
+  { name: "Eventos sectoriales", priority: "Baja", note: "Foco Q3." },
 ];
 
 const tabs = [
@@ -64,11 +64,11 @@ const tabs = [
 
 export default function Plan2026Page() {
   const [tasks, setTasks] = useState([
-    { id: "t1", label: "Actualizar pitch por sector core", done: false },
+    { id: "t1", label: "Actualizar argumentario por sector prioritario", done: false },
     { id: "t2", label: "Definir kits comerciales base", done: false },
     { id: "t3", label: "Mapear decisores por corredor", done: false },
     { id: "t4", label: "Lanzar piloto con 3 cuentas salud", done: false },
-    { id: "t5", label: "Configurar CRM con fases del embudo", done: false },
+    { id: "t5", label: "Configurar el sistema comercial con fases del embudo", done: false },
   ]);
 
   const toggleTask = (id: string) => {
@@ -81,27 +81,27 @@ export default function Plan2026Page() {
 
   return (
     <div className="space-y-8">
-      <header className="rounded-2xl border bg-muted/50 p-6 shadow-sm">
+      <header className="rounded-2xl border bg-muted p-6 shadow-sm">
         <p className="text-xs uppercase tracking-wide text-foreground/60">
           Plan 2026
         </p>
         <h1 className="mt-2 text-3xl font-semibold text-foreground">
-          Roadmap comercial 2026
+          Hoja de ruta comercial 2026
         </h1>
         <p className="mt-2 text-sm text-foreground/70">
           Hoja de ruta por trimestre, embudo y canales.
         </p>
       </header>
 
-      <section className="rounded-2xl border bg-background p-6 shadow-sm">
-        <h2 className="text-xl font-semibold text-foreground">Roadmap Q1-Q4</h2>
+      <section className="rounded-2xl border bg-muted p-6 shadow-sm">
+        <h2 className="text-xl font-semibold text-foreground">Hoja de ruta Q1-Q4</h2>
         <div className="mt-6">
           <Timeline items={roadmapItems} />
         </div>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
-        <div className="rounded-2xl border bg-background p-6 shadow-sm">
+        <div className="rounded-2xl border bg-muted p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-foreground">
             Embudo comercial
           </h2>
@@ -109,7 +109,7 @@ export default function Plan2026Page() {
             {funnelStages.map((stage, index) => (
               <div
                 key={stage.stage}
-                className="flex items-center justify-between rounded-xl border bg-muted/40 px-4 py-3"
+                className="flex flex-col gap-2 rounded-xl border bg-muted/40 px-4 py-3 sm:flex-row sm:items-center sm:justify-between"
               >
                 <div>
                   <p className="text-sm font-semibold text-foreground">
@@ -128,13 +128,13 @@ export default function Plan2026Page() {
           </div>
         </div>
 
-        <div className="rounded-2xl border bg-background p-6 shadow-sm">
+        <div className="rounded-2xl border bg-muted p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-foreground">Canales</h2>
           <div className="mt-4 space-y-3">
             {channels.map((channel) => (
               <div
                 key={channel.name}
-                className="flex items-center justify-between rounded-xl border bg-muted/40 px-4 py-3"
+                className="flex flex-col gap-2 rounded-xl border bg-muted/40 px-4 py-3 sm:flex-row sm:items-center sm:justify-between"
               >
                 <div>
                   <p className="text-sm font-semibold text-foreground">
@@ -151,12 +151,12 @@ export default function Plan2026Page() {
         </div>
       </section>
 
-      <section className="rounded-2xl border bg-background p-6 shadow-sm">
+      <section className="rounded-2xl border bg-muted p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-foreground">
           Proximos 30 dias
         </h2>
         <p className="mt-2 text-sm text-foreground/70">
-          Checklist operativo con seguimiento local.
+          Lista de control operativa con seguimiento local.
         </p>
         <div className="mt-4 space-y-3">
           {tasks.map((task) => (

@@ -10,9 +10,9 @@ import { formatScore } from "@/lib/format";
 
 const decisions = [
   {
-    title: "Concentrar esfuerzo en salud y food & beverage",
+    title: "Concentrar esfuerzo en salud y alimentos y bebidas",
     detail:
-      "Priorizar cuentas core para capturar recompra y contratos preventivos.",
+      "Priorizar cuentas prioritarias para capturar recompra y contratos preventivos.",
     source_ids: ["src_segment_ranking", "src_health_segment", "src_fnb_segment"],
   },
   {
@@ -78,9 +78,9 @@ export default function Home() {
 
   return (
     <div className="space-y-10">
-      <section className="rounded-2xl border bg-muted/50 p-6 shadow-sm">
+      <section className="rounded-2xl border bg-muted p-6 shadow-sm">
         <p className="text-xs uppercase tracking-wide text-foreground/60">
-          Executive Summary
+          Resumen Ejecutivo
         </p>
         <h1 className="mt-2 text-3xl font-semibold text-foreground">
           Plan de Ventas 2026 - ProClean (Lima)
@@ -91,19 +91,19 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-xl font-semibold text-foreground">
             3 decisiones 2026
           </h2>
           <span className="rounded-full bg-muted px-3 py-1 text-xs text-foreground/70">
-            Decision board
+            Panel de decisiones
           </span>
         </div>
         <div className="mt-4 grid gap-4 md:grid-cols-3">
           {decisions.map((decision) => (
             <div
               key={decision.title}
-              className="flex flex-col gap-3 rounded-xl border bg-background p-4 shadow-sm"
+              className="flex flex-col gap-3 rounded-xl border bg-muted p-4 shadow-sm"
             >
               <div>
                 <h3 className="text-sm font-semibold text-foreground">
@@ -127,13 +127,13 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-xl font-semibold text-foreground">
-            Ranking de sectores
+            Clasificacion de sectores
           </h2>
-          <div className="flex gap-2 text-xs">
+          <div className="flex flex-wrap gap-2 text-xs">
             <span className="rounded-full bg-primary px-3 py-1 text-primary-foreground">
-              CORE
+              PRIORITARIO
             </span>
             <span className="rounded-full bg-muted px-3 py-1 text-foreground/70">
               SECUNDARIO
@@ -154,9 +154,9 @@ export default function Home() {
       </section>
 
       <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="rounded-2xl border bg-background p-6 shadow-sm">
+        <div className="rounded-2xl border bg-muted p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-foreground">
-            KPI globales
+            Indicadores globales
           </h2>
           <p className="mt-2 text-sm text-foreground/70">
             Promedio ponderado de los sectores priorizados.
@@ -185,12 +185,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="rounded-2xl border bg-background p-6 shadow-sm">
-          <div className="flex items-center justify-between">
+        <div className="rounded-2xl border bg-muted p-6 shadow-sm">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <h2 className="text-xl font-semibold text-foreground">
-              Ranking por atractivo
+              Orden por atractivo
             </h2>
-            <span className="text-xs text-foreground/60">Score 0-100</span>
+            <span className="text-xs text-foreground/60">Puntaje 0-100</span>
           </div>
           <p className="mt-2 text-sm text-foreground/70">
             Comparativo por sector para 2026.
@@ -201,7 +201,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="rounded-2xl border bg-background p-6 shadow-sm">
+      <section className="rounded-2xl border bg-muted p-6 shadow-sm">
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-xl font-semibold text-foreground">

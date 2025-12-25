@@ -57,21 +57,25 @@ export default function FilterBar({
         />
       </label>
       <div className="flex flex-wrap gap-2">
-        {["all", ...themes].map((theme) => (
-          <button
-            key={theme}
-            type="button"
-            onClick={() => onThemeChange(theme)}
-            className={`rounded-full border px-3 py-1 text-xs transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 ${
-              activeTheme === theme
-                ? "border-primary bg-primary text-primary-foreground"
-                : "border-border bg-background text-foreground/70 hover:border-primary"
-            }`}
-            aria-label={`Filtrar por tema ${theme}`}
-          >
-            {theme === "all" ? "Todos" : theme}
-          </button>
-        ))}
+        {["all", ...themes].map((theme) => {
+          const label = theme === "all" ? "Todos" : theme;
+
+          return (
+            <button
+              key={theme}
+              type="button"
+              onClick={() => onThemeChange(theme)}
+              className={`rounded-full border px-3 py-1 text-xs transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 ${
+                activeTheme === theme
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border bg-background text-foreground/70 hover:border-primary"
+              }`}
+              aria-label={`Filtrar por tema ${label}`}
+            >
+              {label}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

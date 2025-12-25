@@ -21,8 +21,8 @@ export default function Timeline({ items }: TimelineProps) {
               <span className="h-full w-px bg-border" />
             ) : null}
           </div>
-          <div className="rounded-xl border bg-background p-4 shadow-sm">
-            <div className="flex items-center justify-between gap-4">
+          <div className="rounded-xl border bg-muted p-4 shadow-sm">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <h4 className="text-sm font-semibold text-foreground">
                 {item.title}
               </h4>

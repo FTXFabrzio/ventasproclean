@@ -21,7 +21,9 @@ export type Sector = {
   kpis: KPI;
   resumen: string;
   dolores: string[];
+  que_compra: string[];
   recomendaciones: string[];
+  pitch: string;
   compra_mix: {
     quimicos: number;
     accesorios: number;
